@@ -1,10 +1,10 @@
 {
   "es": {
     "title": "Sobre <span className=\"aboutme-orange\">mi</span>",
-    "description": "Aspiro a desarrollar todas mis capacidades y habilidades para crecer personal y profesionalmente en una compañía, aportando compromiso, responsabilidad, dinamismo y creatividad. Me considero una persona autodidacta, siempre en busca de estar a la vanguardia de la tecnología. Cuento con experiencia como Desarrollador Front-End y Analista de Aplicaciones."
+    "description": "Desarrollador Front-End con enfoque en producción eficiente, rendimiento y escalabilidad. Experiencia en desarrollo de aplicaciones móviles y web, integración con servicios empresariales y mejora continua de procesos. Conocimiento sólido en React, React Native, manejo de bases de datos, diseño UX/UI en Figma y despliegue de soluciones en entornos reales. Trabajo con metodologías ágiles y priorizo la calidad del producto final por encima de soluciones rápidas o poco mantenibles."
   },
   "en": {
     "title": "About <span className=\"aboutme-orange\">me</span>",
-    "description": "I aspire to develop all my skills and abilities to grow personally and professionally in a company, contributing commitment, responsibility, dynamism, and creativity. I consider myself a self-taught person, always seeking to stay at the forefront of technology. I have experience as a Front-End Developer and Application Analyst."
+    "description": "Front-End Developer focused on efficient production, performance, and scalability. Experience in building mobile and web applications, integrating with enterprise services, and continuously improving processes. Solid knowledge of React, React Native, database management, UX/UI design in Figma, and real-world deployment. Works with agile methodologies and prioritizes product quality over quick or unsustainable solutions."
   }
 }

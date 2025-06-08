@@ -1,16 +1,17 @@
 import React from "react";
 import data from "../../data/education.json";
 import "./Education.css";
+import salir from "../../assets/salir.png";
 
 const sectionTitles = {
-  es: {
-    education: "Formación",
-    certificates: "Certificaciones"
-  },
-  en: {
-    education: "Education",
-    certificates: "Certificates"
-  }
+    es: {
+        education: "Formación",
+        certificates: "Certificaciones"
+    },
+    en: {
+        education: "Education",
+        certificates: "Certificates"
+    }
 };
 
 export default function Education({ lang }) {
@@ -43,7 +44,7 @@ export default function Education({ lang }) {
             <div className="certifications-grid">
                 {certificates.map((cert, idx) => (
                     <div className="cert-card" key={idx}>
-                        <a
+                        <div className="cert-header"> <a
                             href={cert.url || "#"}
                             className="cert-title"
                             target="_blank"
@@ -52,6 +53,9 @@ export default function Education({ lang }) {
                         >
                             {cert.name}
                         </a>
+                            <img src={salir} alt="externo" className="ico-externo" />
+                        </div>
+
                         <ul className="cert-info">
                             <li>{cert.institution}</li>
                         </ul>
