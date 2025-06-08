@@ -1,0 +1,39 @@
+{
+  "education": [
+    {
+      "institution": "UNAB (Universidad Nacional Almirante Brown)",
+      "url": "https://institution.com/",
+      "area": "Tecnicatura en programación",
+      "startDate": "2024",
+      "endDate": "Actualidad"
+    },
+    {
+      "institution": "Instituto San Jose",
+      "url": "https://institution.com/",
+      "area": "Estudios secundarios completos. Bachiller con orientación en Ciencias Sociales",
+      "startDate": "2011",
+      "endDate": "2017"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "React",
+      "url": "https://www.coderhouse.com/ar/certificados/65ca4e5a82e04116c658a944?lang=es"
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://coderhouse.com/ar/certificados/6538126ad670f7837198332f?lang=es"
+    },
+    {
+      "name": "HTML",
+      "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=es"
+    },
+    {
+      "name": "CSS",
+      "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=es"
+    },
+    {
+      "name": "CCNA"
+    }
+  ]
+}

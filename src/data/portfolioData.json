@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Rain",
+    "description": "Diseño de landing page para una Start-Up de desarrollo web, trabajando en colaboración para ofrecer soluciones innovadoras y de calidad a nuestros clientes.",
+    "technologies": ["React", "CSS", "PHP"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879398/Prueba_t4amxb.png",
+    "url": "https://digitalrainreact.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Hooligang Cuts",
+    "description": "Diseño y desarrollo web para una barbería, con la implementación de un sistema de programación de turnos a través de Cal.com para gestión de citas.",
+    "technologies": ["HTML", "SASS", "JavaScript"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879400/Hooligang_g1b976.png",
+    "url": "https://hooligangcuts.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "Campo Fertil",
+    "description": "Diseño y desarrollo web para Campo Fértil S.R.L, una empresa agroindustrial líder en producción de granos, venta de agroquímicos y servicios agrícolas.",
+    "technologies": ["React", "CSS", "ViteJS", "Node.js", "JSON"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879400/Campo_fertil_pbebil.png",
+    "url": "https://campofertilsrl.netlify.app/"
+  },
+  {
+    "id": 4,
+    "title": "Mikem'Store",
+    "description": "Mi primer proyecto de desarrollo web, creado como parte del curso de desarrollo web de CoderHouse.",
+    "technologies": ["HTML", "SASS", "Bootstrap"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879791/mikemstore_gbnduf.png",
+    "url": "https://mikemstore.netlify.app/"
+  },
+  {
+    "id": 5,
+    "title": "Sneaker Solid",
+    "description": "Tienda E-Commerce, desarrollada para el curso de JavaScript en CoderHouse.",
+    "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
+    "url": "https://sneakersolid.netlify.app/"
+  },
+  {
+    "id": 6,
+    "title": "IphoneZS",
+    "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
+    "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
+    "url": "https://iphonezs.netlify.app/"
+  }
+]
