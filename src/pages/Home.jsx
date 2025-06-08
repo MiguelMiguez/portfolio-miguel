@@ -5,6 +5,7 @@ import AboutMe from '../sections/AboutMe/AboutMe'
 import Experiencie from '../sections/Experiencie/Experiencie'
 import Education from '../sections/Education/Education'
 import Portfolio from '../sections/Portfolio/Portfolio'
+import Footer from '../components/Footer/Footer'
 
 
 
@@ -17,8 +18,7 @@ const Home = () => {
             <Experiencie />
             <Education />
             <Portfolio />
-
-
+            <Footer />
         </div>
     )
 }

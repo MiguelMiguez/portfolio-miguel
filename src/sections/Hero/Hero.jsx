@@ -9,19 +9,19 @@ import profile from "../../assets/profile.png";
 const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos", "contacto"];
 
 export default function Hero() {
-    // Guarda el índice actual en un ref para evitar reinicio en cada render
+
     const currentSectionRef = React.useRef(0);
 
     const handleScrollToNext = () => {
-        // Busca la sección visible actualmente
+
         const currentIdx = sectionIds.findIndex(id => {
             const el = document.getElementById(id);
             if (!el) return false;
             const rect = el.getBoundingClientRect();
-            // Considera visible si la parte superior está cerca del top de la ventana
+
             return rect.top >= -100 && rect.top < window.innerHeight / 2;
         });
-        // Calcula el siguiente índice (cíclico)
+
         const nextIdx = currentIdx === -1
             ? 1
             : (currentIdx + 1) % sectionIds.length;
@@ -68,7 +68,7 @@ export default function Hero() {
                     />
                 </div>
             </div>
-            {/* Call to action fijo abajo */}
+
             <button
                 className="hero-next-btn"
                 onClick={handleScrollToNext}
