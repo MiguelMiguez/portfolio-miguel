@@ -1,7 +1,7 @@
 import React from "react";
 import "./Tech.css";
-import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaBootstrap, FaGitAlt, FaNodeJs, FaDocker, FaLinux } from "react-icons/fa";
-import { SiJavascript, SiOracle, SiSass, SiFirebase, SiVite, SiTailwindcss, SiPostgresql, SiTypescript, SiFigma, SiRedux, SiExpress } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaBootstrap, FaGitAlt, FaNodeJs, } from "react-icons/fa";
+import { SiJavascript, SiOracle, SiSass, SiFirebase, SiVite, SiTailwindcss, SiPostgresql, SiTypescript, SiFigma } from "react-icons/si";
 
 const skills = [
     { name: "React", icon: <FaReact color="#61dafb" /> },
@@ -22,10 +22,15 @@ const skills = [
     { name: "Figma", icon: <SiFigma color="#a259ff" /> },
 ];
 
-export default function Tech() {
+export default function Tech({ lang = "es" }) {
+    const titles = {
+        es: "Tecnologías",
+        en: "Technologies",
+    };
+
     return (
         <section className="tech-section" id="tecnologias">
-            <h2 className="tech-title">Skills</h2>
+            <h2 className="tech-title">{titles[lang]}</h2>
             <div className="tech-grid">
                 {skills.map((skill) => (
                     <div className="tech-card" key={skill.name}>

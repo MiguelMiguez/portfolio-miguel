@@ -22,7 +22,7 @@ const Home = () => {
             <Experiencie lang={lang} />
             <Education lang={lang} />
             <Portfolio lang={lang} />
-            <Tech />
+            <Tech lang={lang} />
             <Footer />
         </div>
     )

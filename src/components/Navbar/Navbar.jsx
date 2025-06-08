@@ -9,7 +9,7 @@ const navLinksData = {
     { id: "experiencia", label: "experiencia" },
     { id: "formacion", label: "formación" },
     { id: "proyectos", label: "proyectos" },
-    { id: "tecnologias", label: "tecnologias" }
+    { id: "tecnologias", label: "tecnologías" }
   ],
   en: [
     { id: "inicio", label: "home" },
