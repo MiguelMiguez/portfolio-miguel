@@ -36,7 +36,7 @@
 
 .aboutme-info {
   color: #fff;
-  max-width: 370px;
+  min-width: 350px;
 }
 
 .aboutme-info h2 {

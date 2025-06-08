@@ -6,7 +6,7 @@
 
 .navbar-desktop {
   width: 100%;
-  max-width: 900px; /* Puedes ajustar este valor */
+  max-width: 900px;
   margin: 0 auto;
   display: none;
   align-items: center;
@@ -152,10 +152,6 @@
   height: 3px;
   background: #111;
   border-radius: 2px;
-}
-
-.navbar-burger-bar:hover {
-  background: #df691f;
 }
 
 .navbar-mobile-menu {
