@@ -22,19 +22,19 @@ export default function Navbar() {
 
   const handleLangChange = () => {
     setLang((prev) => (prev === "es" ? "en" : "es"));
-    // Aquí puedes agregar lógica para cambiar el idioma global de la app
+
   };
 
   return (
     <nav className="navbar">
-      {/* Desktop Navbar */}
+
       <div className="navbar-desktop">
-        {/* Logo */}
+
         <div className="navbar-logo">
           <span className="navbar-logo-white">m</span>
           <span className="navbar-logo-orange">m</span>
         </div>
-        {/* Links */}
+
         <div className="navbar-links-bg">
           {navLinks.map(({ id, label }) => (
             <a
@@ -47,7 +47,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        {/* Idioma */}
+
         <div>
           <button className="navbar-lang-btn" onClick={handleLangChange}>
             {lang === "es" ? "Es" : "En"}
@@ -64,9 +64,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navbar */}
+
       <div className="navbar-mobile">
-        {/* Burger Button */}
+
         <button
           className="navbar-burger"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -76,11 +76,11 @@ export default function Navbar() {
           <span className="navbar-burger-bar"></span>
         </button>
 
-        {/* Mobile Menu */}
+
         <div
           className={`navbar-mobile-menu${menuOpen ? " open" : ""}`}
         >
-          {/* Cerrar */}
+
           <button
             className="navbar-mobile-close"
             onClick={() => setMenuOpen(false)}
@@ -98,7 +98,7 @@ export default function Navbar() {
                 {label}
               </a>
             ))}
-            {/* Idioma (Mobile) */}
+
             <button
               className="navbar-lang-btn navbar-mobile-lang"
               onClick={handleLangChange}

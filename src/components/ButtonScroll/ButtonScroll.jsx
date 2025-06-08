@@ -1,7 +1,7 @@
 import React from "react";
 import "./ButtonScroll.css";
 
-// IDs de las secciones en orden
+
 const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos"];
 
 export default function ButtonScroll() {
