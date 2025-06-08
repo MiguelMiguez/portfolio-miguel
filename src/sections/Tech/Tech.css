@@ -1,0 +1,51 @@
+.tech-section {
+  display: flex;
+  padding: 2rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.tech-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem 2rem;
+  align-items: center;
+}
+
+.tech-card {
+  background: #242323;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  backdrop-filter: blur(10px);
+}
+
+.tech-card:hover {
+  box-shadow: 0 4px 16px rgba(223, 105, 31, 0.18);
+}
+
+.tech-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}

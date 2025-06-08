@@ -7,6 +7,7 @@ import Education from '../sections/Education/Education'
 import Portfolio from '../sections/Portfolio/Portfolio'
 import Footer from '../components/Footer/Footer'
 import ButtonScroll from '../components/ButtonScroll/ButtonScroll'
+import Tech from '../sections/Tech/Tech'
 
 const Home = () => {
     const [lang, setLang] = useState("es");
@@ -21,6 +22,7 @@ const Home = () => {
             <Experiencie lang={lang} />
             <Education lang={lang} />
             <Portfolio lang={lang} />
+            <Tech />
             <Footer />
         </div>
     )

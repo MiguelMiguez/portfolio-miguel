@@ -9,6 +9,7 @@ const navLinksData = {
     { id: "experiencia", label: "experiencia" },
     { id: "formacion", label: "formación" },
     { id: "proyectos", label: "proyectos" },
+    { id: "tecnologias", label: "tecnologias" }
   ],
   en: [
     { id: "inicio", label: "home" },
@@ -16,6 +17,7 @@ const navLinksData = {
     { id: "experiencia", label: "experience" },
     { id: "formacion", label: "education" },
     { id: "proyectos", label: "projects" },
+    { id: "tecnologias", label: "technologies" }
   ],
 };
 
