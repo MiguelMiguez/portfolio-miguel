@@ -1,0 +1,227 @@
+.experiencie-section {
+  width: 100%;
+  min-height: 90vh;
+  background: #202020;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experiencie-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.experiencie-timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.experiencie-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 70px;
+  margin-top: 1.5rem;
+}
+
+.experiencie-timeline-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.experiencie-timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: #df691f;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: box-shadow 0.2s;
+  transition: 1s;
+}
+.experiencie-timeline-dot:hover,
+.experiencie-timeline-year:hover {
+  box-shadow: 0 0 0 4px rgba(223, 105, 31, 0.2);
+  transition: 1s;
+}
+
+.experiencie-timeline-year {
+  background: #df691f;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  padding: 0.2rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  transition: 0.5s;
+}
+.experiencie-timeline-year:focus {
+  outline: 2px solid #000000;
+}
+
+.experiencie-timeline-line {
+  width: 3px;
+  height: 60px;
+  background: #df691f;
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+.experiencie-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiencie-detail {
+  background: transparent;
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: none;
+  outline: none;
+  scroll-margin-top: 120px;
+}
+
+.experiencie-company {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.experiencie-company a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.experiencie-company a:hover {
+  color: #df691f;
+}
+
+.experiencie-period {
+  font-size: 1rem;
+  color: #df691f;
+  margin-bottom: 0.3rem;
+}
+
+.experiencie-position {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experiencie-summary {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #fff;
+  font-size: 0.98rem;
+  margin: 1rem 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.experiencie-summary-item {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.7em;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.experiencie-summary-item::before {
+  content: "";
+  position: absolute;
+  left: 0.2em;
+  top: 0.6em;
+  width: 0.5em;
+  height: 0.5em;
+  background: #df691f;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(223, 105, 31, 0.25);
+}
+
+@media (max-width: 900px) {
+  .experiencie-timeline-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .experiencie-details {
+    width: 100%;
+  }
+  .experiencie-timeline {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: unset;
+    width: 100%;
+    margin-top: 1.5rem;
+    position: relative;
+  }
+  .experiencie-timeline-point {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 10px;
+  }
+  .experiencie-timeline-line {
+    width: 60px;
+    height: 3px;
+    background: #df691f;
+    margin: 0 0.5rem;
+    margin-bottom: 0;
+    margin-top: 7px;
+    z-index: 1;
+    display: inline-block;
+  }
+  .experiencie-timeline-line-mobile-extra {
+    width: 60px;
+    height: 3px;
+    background: #df691f;
+    margin: 0 0.5rem;
+    margin-bottom: 0;
+    margin-top: 7px;
+    z-index: 1;
+    display: inline-block;
+  }
+}
+.experiencie-detail-animated {
+  animation: fadeInExp 0.5s;
+}
+@keyframes fadeInExp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.experiencie-timeline-dot.active,
+.experiencie-timeline-year.active {
+  box-shadow: 0 0 0 4px rgba(223, 105, 31, 0.25);
+  background: #df691f;
+  color: #fff;
+}

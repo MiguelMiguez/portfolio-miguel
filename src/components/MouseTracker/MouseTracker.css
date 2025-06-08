@@ -1,0 +1,14 @@
+.mouse-reflection {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: rgba(223, 105, 31, 0.25);
+  box-shadow: 0 0 32px 16px rgba(223, 105, 31, 0.18);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: background 0.2s, box-shadow 0.2s;
+}
