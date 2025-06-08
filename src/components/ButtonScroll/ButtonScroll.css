@@ -18,3 +18,12 @@
 .hero-next-btn.rotated {
   transform: translateX(-50%) rotate(180deg);
 }
+
+.hero-next-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.hero-next-btn.rotated .arrow {
+  transform: rotate(180deg);
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./ButtonScroll.css";
 
-// Botón flotante para navegar entre secciones, rota al llegar al final
 const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos", "tecnologias"];
 
 export default function ButtonScroll() {
@@ -17,7 +16,7 @@ export default function ButtonScroll() {
             setIsAtLastSection(false);
             return;
         }
-        // Buscar la sección visible más cercana al top
+
         let currentIdx = 0;
         for (let i = 0; i < sectionIds.length; i++) {
             const el = document.getElementById(sectionIds[i]);
@@ -81,7 +80,7 @@ export default function ButtonScroll() {
             aria-label={isAtLastSection ? "Volver al inicio" : "Ir a la siguiente sección"}
             style={{ bottom: bottomOffset }}
         >
-            ↓
+            <span className="arrow">↓</span>
         </button>
     );
 }
