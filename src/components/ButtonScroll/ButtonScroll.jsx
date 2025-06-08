@@ -42,7 +42,6 @@ export default function ButtonScroll() {
                 footerVisible = footerRect.top < window.innerHeight && footerRect.bottom > 0;
             }
 
-            // Detecta si al menos el 60% de "proyectos" es visible
             const proyectos = document.getElementById("proyectos");
             let isVisible = false;
             if (proyectos) {
