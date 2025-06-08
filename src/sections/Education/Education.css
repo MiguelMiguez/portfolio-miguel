@@ -16,7 +16,6 @@
   margin-bottom: 2rem;
   margin-top: 0;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .education-main {
@@ -45,7 +44,6 @@
 
 .education-area {
   list-style: none;
-
   margin: 0;
   text-align: center;
 }
@@ -59,7 +57,7 @@
 .certifications-title {
   text-align: center;
   margin-left: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .certifications-grid {
