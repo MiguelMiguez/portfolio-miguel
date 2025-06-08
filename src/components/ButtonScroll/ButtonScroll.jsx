@@ -1,40 +1,44 @@
 import React from "react";
 import "./ButtonScroll.css";
 
-
-const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos"];
+// Botón flotante para navegar entre secciones, rota al llegar al final
+const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos", "tecnologias"];
 
 export default function ButtonScroll() {
     const [isAtLastSection, setIsAtLastSection] = React.useState(false);
-    const [bottomOffset, setBottomOffset] = React.useState(32); // 2rem en px
+    const [bottomOffset, setBottomOffset] = React.useState(32);
 
     const handleScrollToNext = () => {
-        const currentIdx = sectionIds.findIndex(id => {
-            const el = document.getElementById(id);
-            if (!el) return false;
-            const rect = el.getBoundingClientRect();
-            return rect.top >= -100 && rect.top < window.innerHeight / 2;
-        });
-
-        if (currentIdx === sectionIds.length - 1) {
+        if (isAtLastSection) {
             const firstSection = document.getElementById(sectionIds[0]);
             if (firstSection) {
                 firstSection.scrollIntoView({ behavior: "smooth" });
             }
             setIsAtLastSection(false);
-        } else {
-            const nextIdx = currentIdx === -1 ? 1 : currentIdx + 1;
-            const nextSection = document.getElementById(sectionIds[nextIdx]);
-            if (nextSection) {
-                nextSection.scrollIntoView({ behavior: "smooth" });
-            }
-            setIsAtLastSection(nextIdx === sectionIds.length - 1);
+            return;
         }
+        // Buscar la sección visible más cercana al top
+        let currentIdx = 0;
+        for (let i = 0; i < sectionIds.length; i++) {
+            const el = document.getElementById(sectionIds[i]);
+            if (el) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top >= -100) {
+                    currentIdx = i;
+                    break;
+                }
+            }
+        }
+        const nextIdx = Math.min(currentIdx + 1, sectionIds.length - 1);
+        const nextSection = document.getElementById(sectionIds[nextIdx]);
+        if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+        }
+        setIsAtLastSection(nextIdx === sectionIds.length - 1);
     };
 
     React.useEffect(() => {
         const onScroll = () => {
-
             const footer = document.querySelector("footer");
             let footerVisible = false;
             if (footer) {
@@ -42,13 +46,13 @@ export default function ButtonScroll() {
                 footerVisible = footerRect.top < window.innerHeight && footerRect.bottom > 0;
             }
 
-            const proyectos = document.getElementById("proyectos");
+            const lastSection = document.getElementById(sectionIds[sectionIds.length - 1]);
             let isVisible = false;
-            if (proyectos) {
-                const rect = proyectos.getBoundingClientRect();
+            if (lastSection) {
+                const rect = lastSection.getBoundingClientRect();
                 const height = rect.height;
                 const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-                isVisible = visibleHeight / height > 0.6;
+                isVisible = visibleHeight / height > 0.5;
             }
 
             setIsAtLastSection(footerVisible || isVisible);
