@@ -28,7 +28,10 @@ export default function AboutMe({ lang }) {
                     />
                 </div>
                 <div className="aboutme-info">
-                    <h2 dangerouslySetInnerHTML={{ __html: aboutmeData[lang].title }} />
+                    <h2 className="aboutme-title">
+                        {aboutmeData[lang].title1}
+                        <span className="aboutme-orange">{aboutmeData[lang].title2}</span>
+                    </h2>
                     <p>{aboutmeData[lang].description}</p>
                 </div>
             </div>

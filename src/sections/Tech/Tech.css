@@ -12,15 +12,18 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 900px;
   margin: 2rem 2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .tech-card {
@@ -33,6 +36,7 @@
   align-items: center;
   transition: box-shadow 0.2s;
   backdrop-filter: blur(10px);
+  width: 120px;
 }
 
 .tech-card:hover {
