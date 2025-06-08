@@ -6,6 +6,7 @@ import Experiencie from '../sections/Experiencie/Experiencie'
 import Education from '../sections/Education/Education'
 import Portfolio from '../sections/Portfolio/Portfolio'
 import Footer from '../components/Footer/Footer'
+import ButtonScroll from '../components/ButtonScroll/ButtonScroll'
 
 
 
@@ -13,6 +14,7 @@ const Home = () => {
     return (
         <div className="bg-[#202020] text-white min-h-screen">
             <Navbar />
+            <ButtonScroll />
             <Hero />
             <AboutMe />
             <Experiencie />

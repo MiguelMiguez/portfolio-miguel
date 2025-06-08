@@ -6,11 +6,11 @@ import gmailIcon from "../../assets/gmail.png";
 import profile from "../../assets/profile.png";
 
 // IDs de las secciones en orden
-const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos", "contacto"];
+const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos"];
 
 export default function Hero() {
 
-    const currentSectionRef = React.useRef(0);
+    const [isAtLastSection, setIsAtLastSection] = React.useState(false);
 
     const handleScrollToNext = () => {
 
@@ -18,19 +18,42 @@ export default function Hero() {
             const el = document.getElementById(id);
             if (!el) return false;
             const rect = el.getBoundingClientRect();
-
             return rect.top >= -100 && rect.top < window.innerHeight / 2;
         });
 
-        const nextIdx = currentIdx === -1
-            ? 1
-            : (currentIdx + 1) % sectionIds.length;
-        const nextSection = document.getElementById(sectionIds[nextIdx]);
-        if (nextSection) {
-            nextSection.scrollIntoView({ behavior: "smooth" });
+
+        if (currentIdx === sectionIds.length - 1) {
+            const firstSection = document.getElementById(sectionIds[0]);
+            if (firstSection) {
+                firstSection.scrollIntoView({ behavior: "smooth" });
+            }
+            setIsAtLastSection(false);
+        } else {
+
+            const nextIdx = currentIdx === -1 ? 1 : currentIdx + 1;
+            const nextSection = document.getElementById(sectionIds[nextIdx]);
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: "smooth" });
+            }
+
+            setIsAtLastSection(nextIdx === sectionIds.length - 1);
         }
-        currentSectionRef.current = nextIdx;
     };
+
+
+    React.useEffect(() => {
+        const onScroll = () => {
+            const proyectos = document.getElementById("proyectos");
+            if (proyectos) {
+                const rect = proyectos.getBoundingClientRect();
+                const isVisible = rect.top >= -100 && rect.top < window.innerHeight / 2;
+                setIsAtLastSection(isVisible);
+            }
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
 
     return (
         <section className="hero-section" id="inicio">
@@ -68,14 +91,6 @@ export default function Hero() {
                     />
                 </div>
             </div>
-
-            <button
-                className="hero-next-btn"
-                onClick={handleScrollToNext}
-                aria-label="Ir a la siguiente sección"
-            >
-                ↓
-            </button>
         </section>
     );
 }

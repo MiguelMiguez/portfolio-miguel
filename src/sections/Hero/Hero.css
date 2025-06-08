@@ -156,6 +156,14 @@
   background: #b95418;
 }
 
+.hero-next-btn {
+  transition: transform 0.3s;
+}
+
+.hero-next-btn.rotated {
+  transform: rotate(180deg);
+}
+
 @keyframes hero-bounce {
   0%,
   100% {
