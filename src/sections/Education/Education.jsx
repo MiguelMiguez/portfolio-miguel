@@ -26,14 +26,14 @@ export default function Education() {
         {
             name: "CCNA",
             url: "",
-            institution: "Fundacion Proydesa",
+            institution: "Fundación Proydesa",
             date: "Enero 2018",
         },
     ];
 
     return (
         <section className="education-section" id="formacion">
-            <h2 className="education-title">Formacion</h2>
+            <h2 className="education-title">Formación</h2>
             <div className="education-main">
                 <div className="education-block">
                     <h3 className="education-institution">
