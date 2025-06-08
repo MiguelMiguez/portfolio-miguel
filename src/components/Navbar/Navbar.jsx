@@ -1,17 +1,28 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import LangSwitcher from "../LangSwitcher/LangSwitcher";
 
-const navLinks = [
-  { id: "inicio", label: "inicio" },
-  { id: "sobremi", label: "sobre mi" },
-  { id: "experiencia", label: "experiencia" },
-  { id: "formacion", label: "formación" },
-  { id: "proyectos", label: "proyectos" },
-];
+const navLinksData = {
+  es: [
+    { id: "inicio", label: "inicio" },
+    { id: "sobremi", label: "sobre mi" },
+    { id: "experiencia", label: "experiencia" },
+    { id: "formacion", label: "formación" },
+    { id: "proyectos", label: "proyectos" },
+  ],
+  en: [
+    { id: "inicio", label: "home" },
+    { id: "sobremi", label: "about me" },
+    { id: "experiencia", label: "experience" },
+    { id: "formacion", label: "education" },
+    { id: "proyectos", label: "projects" },
+  ],
+};
 
-export default function Navbar() {
+export default function Navbar({ lang, onLangChange }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState("es");
+
+  const navLinks = navLinksData[lang];
 
   const handleLinkClick = (e, id) => {
     e.preventDefault();
@@ -20,16 +31,9 @@ export default function Navbar() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleLangChange = () => {
-    setLang((prev) => (prev === "es" ? "en" : "es"));
-
-  };
-
   return (
     <nav className="navbar">
-
       <div className="navbar-desktop">
-
         <div className="navbar-logo">
           <span className="navbar-logo-white">m</span>
           <span className="navbar-logo-orange">m</span>
@@ -49,24 +53,11 @@ export default function Navbar() {
         </div>
 
         <div>
-          <button className="navbar-lang-btn" onClick={handleLangChange}>
-            {lang === "es" ? "Es" : "En"}
-            <img
-              src={
-                lang === "es"
-                  ? "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
-                  : "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-              }
-              alt={lang === "es" ? "Argentina" : "USA"}
-              className="navbar-lang-flag"
-            />
-          </button>
+          <LangSwitcher lang={lang} onChange={onLangChange} />
         </div>
       </div>
 
-
       <div className="navbar-mobile">
-
         <button
           className="navbar-burger"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -76,11 +67,9 @@ export default function Navbar() {
           <span className="navbar-burger-bar"></span>
         </button>
 
-
         <div
           className={`navbar-mobile-menu${menuOpen ? " open" : ""}`}
         >
-
           <button
             className="navbar-mobile-close"
             onClick={() => setMenuOpen(false)}
@@ -99,21 +88,7 @@ export default function Navbar() {
               </a>
             ))}
 
-            <button
-              className="navbar-lang-btn navbar-mobile-lang"
-              onClick={handleLangChange}
-            >
-              {lang === "es" ? "Es" : "En"}
-              <img
-                src={
-                  lang === "es"
-                    ? "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
-                    : "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-                }
-                alt={lang === "es" ? "Argentina" : "USA"}
-                className="navbar-lang-flag"
-              />
-            </button>
+            <LangSwitcher lang={lang} onChange={onLangChange} />
           </div>
         </div>
       </div>

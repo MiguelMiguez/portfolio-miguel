@@ -1,0 +1,10 @@
+{
+  "es": {
+    "title": "Sobre <span className=\"aboutme-orange\">mi</span>",
+    "description": "Aspiro a desarrollar todas mis capacidades y habilidades para crecer personal y profesionalmente en una compañía, aportando compromiso, responsabilidad, dinamismo y creatividad. Me considero una persona autodidacta, siempre en busca de estar a la vanguardia de la tecnología. Cuento con experiencia como Desarrollador Front-End y Analista de Aplicaciones."
+  },
+  "en": {
+    "title": "About <span className=\"aboutme-orange\">me</span>",
+    "description": "I aspire to develop all my skills and abilities to grow personally and professionally in a company, contributing commitment, responsibility, dynamism, and creativity. I consider myself a self-taught person, always seeking to stay at the forefront of technology. I have experience as a Front-End Developer and Application Analyst."
+  }
+}

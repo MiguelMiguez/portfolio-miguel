@@ -6,7 +6,7 @@
   width: 340px;
   min-width: 280px;
   max-width: 350px;
-  height: 420px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -72,6 +72,6 @@
     width: 95vw;
     max-width: 370px;
     min-width: unset;
-    height: 420px;
+    height: 450px;
   }
 }

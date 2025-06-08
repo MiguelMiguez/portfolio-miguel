@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutMe.css";
-import Animaciones from "../../components/Animaciones/Animaciones";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import aboutmeData from "../../data/aboutme.json";
 
-export default function AboutMe() {
+export default function AboutMe({ lang }) {
     const [width, setWidth] = React.useState(
         window.innerWidth >= 1280 ? 500 : 350
     );
@@ -28,12 +28,8 @@ export default function AboutMe() {
                     />
                 </div>
                 <div className="aboutme-info">
-                    <h2>
-                        Sobre <span className="aboutme-orange">mi</span>
-                    </h2>
-                    <p>
-                        Aspiro a desarrollar todas mis capacidades y habilidades para crecer personal y profesionalmente en una compañía, aportando compromiso, responsabilidad, dinamismo y creatividad. Me considero una persona autodidacta, siempre en busca de estar a la vanguardia de la tecnología. Cuento con experiencia como Desarrollador Front-End y Analista de Aplicaciones.
-                    </p>
+                    <h2 dangerouslySetInnerHTML={{ __html: aboutmeData[lang].title }} />
+                    <p>{aboutmeData[lang].description}</p>
                 </div>
             </div>
         </section>

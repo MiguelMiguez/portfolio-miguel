@@ -1,57 +1,116 @@
-[
-  {
-    "name": "Asociación de Cooperativas Argentinas",
-    "position": "Desarrollador Front-End & Analista de Aplicaciones",
-    "url": "https://www.acacoop.com.ar/",
-    "startDate": "2022",
-    "endDate": "Actualidad",
-    "summary": [
-      "Desarrollador Front-End en aplicaciones móviles con React Native y Expo, participando en el desarrollo y diseño UX/UI de una app de gestión de flota de vehículos, con foco en usabilidad y rendimiento multiplataforma.",
-      "Administración de bases de datos SQL Oracle.",
-      "Gestión de aplicaciones contables e impositivas para asegurar la precisión y cumplimiento de los procesos financieros.",
-      "Administración de aplicaciones de generación de remitos y facturación para asegurar un flujo eficiente de documentos comerciales.",
-      "Manejo de SAP para respaldar las operaciones comerciales y la gestión de la empresa.",
-      "Gestión de tickets en Jira Service Management."
-    ]
-  },
-  {
-    "name": "Compass-Group",
-    "position": "Analista de soporte",
-    "url": "",
-    "startDate": "2021",
-    "endDate": "2022",
-    "summary": [
-      "Administración de usuarios en servidores de Active Directory para garantizar el acceso adecuado y la seguridad de las cuentas de usuario.",
-      "Gestión de usuarios en Microsoft Azure para garantizar la seguridad y el acceso adecuado a los recursos en la nube.",
-      "Gestión de usuarios en Microsoft Exchange para mantener la integridad y la disponibilidad del correo electrónico empresarial.",
-      "Creación de una imagen de Windows 10 para equipos limitados, facilitando una implementación rápida y consistente de sistemas operativos en nuevos equipos.",
-      "Elaboración de instructivos para la base de conocimientos, facilitando a los usuarios la resolución autónoma de problemas comunes.",
-      "Gestión de usuarios en Service Desk, brindando asistencia técnica a los usuarios y resolviendo incidencias en tiempo real."
-    ]
-  },
-  {
-    "name": "Mobisond",
-    "position": "Analista de soporte & Coordinador de proyectos",
-    "url": "",
-    "startDate": "2019",
-    "endDate": "2021",
-    "summary": [
-      "Configuré switches Huawei para mejorar la conectividad en hospitales de la Ciudad Autónoma de Buenos Aires.",
-      "Coordiné cuadrillas para la instalación de servicio de internet, asegurando puntualidad y calidad en la entrega del servicio a los clientes.",
-      "Cloné 1600 servidores Huawei para el programa Educar, optimizando la infraestructura tecnológica en entornos educativos.",
-      "Migré el sistema operativo de Windows 7 a Windows 10, garantizando una transición fluida y sin interrupciones para los usuarios.",
-      "Implementé tecnología de telefonía IP y WIFI Cisco, mejorando la conectividad y la eficiencia operativa.",
-      "Diseñé y armé salas de conferencia con tecnología Cisco, creando espacios de colaboración modernos y funcionales."
-    ]
-  },
-  {
-    "name": "PhotoSmile",
-    "position": "Soporte Tecnico",
-    "url": "",
-    "startDate": "2017",
-    "endDate": "2019",
-    "summary": [
-      "Armado, instalación y soporte técnico de PCs e impresoras: montaje y configuración de equipos informáticos, instalación y configuración de impresoras, y brindar soporte técnico a usuarios para resolver problemas de hardware y software, asegurando el correcto funcionamiento de los dispositivos."
-    ]
-  }
-]
+{
+  "es": [
+    {
+      "name": "Asociación de Cooperativas Argentinas",
+      "position": "Desarrollador Front-End & Analista de Aplicaciones",
+      "url": "https://www.acacoop.com.ar/",
+      "startDate": "2022",
+      "endDate": "Actualidad",
+      "summary": [
+        "Desarrollador Front-End en aplicaciones móviles con React Native y Expo, participando en el desarrollo y diseño UX/UI de una app de gestión de flota de vehículos, con foco en usabilidad y rendimiento multiplataforma.",
+        "Administración de bases de datos SQL Oracle.",
+        "Gestión de aplicaciones contables e impositivas para asegurar la precisión y cumplimiento de los procesos financieros.",
+        "Administración de aplicaciones de generación de remitos y facturación para asegurar un flujo eficiente de documentos comerciales.",
+        "Manejo de SAP para respaldar las operaciones comerciales y la gestión de la empresa.",
+        "Gestión de tickets en Jira Service Management."
+      ]
+    },
+    {
+      "name": "Compass-Group",
+      "position": "Analista de soporte",
+      "url": "",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": [
+        "Administración de usuarios en servidores de Active Directory para garantizar el acceso adecuado y la seguridad de las cuentas de usuario.",
+        "Gestión de usuarios en Microsoft Azure para garantizar la seguridad y el acceso adecuado a los recursos en la nube.",
+        "Gestión de usuarios en Microsoft Exchange para mantener la integridad y la disponibilidad del correo electrónico empresarial.",
+        "Creación de una imagen de Windows 10 para equipos limitados, facilitando una implementación rápida y consistente de sistemas operativos en nuevos equipos.",
+        "Elaboración de instructivos para la base de conocimientos, facilitando a los usuarios la resolución autónoma de problemas comunes.",
+        "Gestión de usuarios en Service Desk, brindando asistencia técnica a los usuarios y resolviendo incidencias en tiempo real."
+      ]
+    },
+    {
+      "name": "Mobisond",
+      "position": "Analista de soporte & Coordinador de proyectos",
+      "url": "",
+      "startDate": "2019",
+      "endDate": "2021",
+      "summary": [
+        "Configuré switches Huawei para mejorar la conectividad en hospitales de la Ciudad Autónoma de Buenos Aires.",
+        "Coordiné cuadrillas para la instalación de servicio de internet, asegurando puntualidad y calidad en la entrega del servicio a los clientes.",
+        "Cloné 1600 servidores Huawei para el programa Educar, optimizando la infraestructura tecnológica en entornos educativos.",
+        "Migré el sistema operativo de Windows 7 a Windows 10, garantizando una transición fluida y sin interrupciones para los usuarios.",
+        "Implementé tecnología de telefonía IP y WIFI Cisco, mejorando la conectividad y la eficiencia operativa.",
+        "Diseñé y armé salas de conferencia con tecnología Cisco, creando espacios de colaboración modernos y funcionales."
+      ]
+    },
+    {
+      "name": "PhotoSmile",
+      "position": "Soporte Tecnico",
+      "url": "",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": [
+        "Armado, instalación y soporte técnico de PCs e impresoras: montaje y configuración de equipos informáticos, instalación y configuración de impresoras, y brindar soporte técnico a usuarios para resolver problemas de hardware y software, asegurando el correcto funcionamiento de los dispositivos."
+      ]
+    }
+  ],
+  "en": [
+    {
+      "name": "Asociación de Cooperativas Argentinas",
+      "position": "Front-End Developer & Application Analyst",
+      "url": "https://www.acacoop.com.ar/",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": [
+        "Front-End Developer in mobile applications with React Native and Expo, participating in the development and UX/UI design of a fleet management app, focusing on usability and cross-platform performance.",
+        "SQL Oracle database administration.",
+        "Management of accounting and tax applications to ensure accuracy and compliance with financial processes.",
+        "Administration of delivery note and invoicing applications to ensure an efficient flow of commercial documents.",
+        "SAP management to support business operations and company management.",
+        "Ticket management in Jira Service Management."
+      ]
+    },
+    {
+      "name": "Compass-Group",
+      "position": "Support Analyst",
+      "url": "",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": [
+        "User administration on Active Directory servers to ensure proper access and security of user accounts.",
+        "User management in Microsoft Azure to ensure security and proper access to cloud resources.",
+        "User management in Microsoft Exchange to maintain the integrity and availability of business email.",
+        "Creation of a Windows 10 image for limited machines, facilitating quick and consistent deployment of operating systems on new machines.",
+        "Development of knowledge base articles, enabling users to autonomously resolve common issues.",
+        "User management in Service Desk, providing technical assistance to users and resolving incidents in real-time."
+      ]
+    },
+    {
+      "name": "Mobisond",
+      "position": "Support Analyst & Project Coordinator",
+      "url": "",
+      "startDate": "2019",
+      "endDate": "2021",
+      "summary": [
+        "Configured Huawei switches to improve connectivity in hospitals in the Autonomous City of Buenos Aires.",
+        "Coordinated teams for internet service installation, ensuring timeliness and quality in service delivery to clients.",
+        "Cloned 1600 Huawei servers for the Educar program, optimizing technological infrastructure in educational environments.",
+        "Migrated the operating system from Windows 7 to Windows 10, ensuring a smooth and uninterrupted transition for users.",
+        "Implemented IP telephony and Cisco WIFI technology, improving connectivity and operational efficiency.",
+        "Designed and set up conference rooms with Cisco technology, creating modern and functional collaboration spaces."
+      ]
+    },
+    {
+      "name": "PhotoSmile",
+      "position": "Technical Support",
+      "url": "",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": [
+        "Assembly, installation, and technical support of PCs and printers: assembly and configuration of computer equipment, installation and configuration of printers, and providing technical support to users to resolve hardware and software issues, ensuring the proper functioning of devices."
+      ]
+    }
+  ]
+}

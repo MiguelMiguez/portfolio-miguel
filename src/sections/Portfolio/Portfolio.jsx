@@ -3,7 +3,12 @@ import portfolioData from "../../data/portfolioData.json";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
 
-const Portfolio = () => {
+const sectionTitles = {
+  es: "Proyectos",
+  en: "Projects"
+};
+
+const Portfolio = ({ lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
@@ -14,9 +19,9 @@ const Portfolio = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const projects = portfolioData[lang] || [];
   const itemsPerPage = isMobile ? 1 : 3;
-  const totalPages = Math.ceil(portfolioData.length / itemsPerPage);
-
+  const totalPages = Math.ceil(projects.length / itemsPerPage);
 
   const goToSlide = (idx) => {
     if (idx === currentIndex || animating) return;
@@ -27,14 +32,14 @@ const Portfolio = () => {
     }, 400);
   };
 
-  const currentProjects = portfolioData.slice(
+  const currentProjects = projects.slice(
     currentIndex * itemsPerPage,
     currentIndex * itemsPerPage + itemsPerPage
   );
 
   return (
     <section id="proyectos" className="carousel-section">
-      <h2 className="carousel-title">Proyectos</h2>
+      <h2 className="carousel-title">{sectionTitles[lang]}</h2>
       <div className="carousel-container">
         <div
           className={`carousel-cards${animating ? " animating" : ""}`}
@@ -50,7 +55,11 @@ const Portfolio = () => {
             key={idx}
             className={`carousel-dot${currentIndex === idx ? " active" : ""}`}
             onClick={() => goToSlide(idx)}
-            aria-label={`Ir a página ${idx + 1}`}
+            aria-label={
+              lang === "es"
+                ? `Ir a página ${idx + 1}`
+                : `Go to page ${idx + 1}`
+            }
           />
         ))}
       </div>

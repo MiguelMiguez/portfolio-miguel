@@ -1,39 +1,76 @@
 {
-  "education": [
-    {
-      "institution": "UNAB (Universidad Nacional Almirante Brown)",
-      "url": "",
-      "area": "Tecnicatura en programación",
-      "startDate": "2024",
-      "endDate": "Actualidad"
-    },
-    {
-      "institution": "Instituto San Jose",
-      "url": "https://institution.com/",
-      "area": "Estudios secundarios completos. Bachiller con orientación en Ciencias Sociales",
-      "startDate": "2011",
-      "endDate": "2017"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "React",
-      "url": "https://www.coderhouse.com/ar/certificados/65ca4e5a82e04116c658a944?lang=es"
-    },
-    {
-      "name": "JavaScript",
-      "url": "https://coderhouse.com/ar/certificados/6538126ad670f7837198332f?lang=es"
-    },
-    {
-      "name": "HTML",
-      "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=es"
-    },
-    {
-      "name": "CSS",
-      "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=es"
-    },
-    {
-      "name": "CCNA"
-    }
-  ]
+  "es": {
+    "education": [
+      {
+        "institution": "UNAB (Universidad Nacional Almirante Brown)",
+        "url": "",
+        "area": "Tecnicatura en programación",
+        "startDate": "2024",
+        "endDate": "Actualidad"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "React.js",
+        "url": "https://www.coderhouse.com/ar/certificados/65ca4e5a82e04116c658a944?lang=es",
+        "institution": "CoderHouse",
+        "date": "Febrero 2024"
+      },
+      {
+        "name": "JavaScript",
+        "url": "https://coderhouse.com/ar/certificados/6538126ad670f7837198332f?lang=es",
+        "institution": "CoderHouse",
+        "date": "Octubre 2023"
+      },
+      {
+        "name": "HTML - CSS",
+        "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=es",
+        "institution": "CoderHouse",
+        "date": "Agosto 2023"
+      },
+      {
+        "name": "CCNA",
+        "url": "",
+        "institution": "Fundación Proydesa",
+        "date": "Enero 2018"
+      }
+    ]
+  },
+  "en": {
+    "education": [
+      {
+        "institution": "UNAB (National University Almirante Brown)",
+        "url": "",
+        "area": "Technical Degree in Programming",
+        "startDate": "2024",
+        "endDate": "Present"
+      }
+    ],
+    "certificates": [
+      {
+        "name": "React.js",
+        "url": "https://www.coderhouse.com/ar/certificados/65ca4e5a82e04116c658a944?lang=en",
+        "institution": "CoderHouse",
+        "date": "February 2024"
+      },
+      {
+        "name": "JavaScript",
+        "url": "https://coderhouse.com/ar/certificados/6538126ad670f7837198332f?lang=en",
+        "institution": "CoderHouse",
+        "date": "October 2023"
+      },
+      {
+        "name": "HTML - CSS",
+        "url": "https://www.coderhouse.com/ar/certificados/64d4eb5c19aad62f906bf3e7?lang=en",
+        "institution": "CoderHouse",
+        "date": "August 2023"
+      },
+      {
+        "name": "CCNA",
+        "url": "",
+        "institution": "Fundación Proydesa",
+        "date": "January 2018"
+      }
+    ]
+  }
 }
