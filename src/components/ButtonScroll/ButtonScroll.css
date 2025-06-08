@@ -3,7 +3,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
-  z-index: 1000;
+  z-index: 1;
   transition: transform 0.3s, bottom 0.3s;
   font-size: 2rem;
   background: none;

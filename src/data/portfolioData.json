@@ -3,9 +3,16 @@
     "id": 1,
     "title": "Digital Rain",
     "description": "Diseño de landing page para una Start-Up de desarrollo web, trabajando en colaboración para ofrecer soluciones innovadoras y de calidad a nuestros clientes.",
-    "technologies": ["React", "CSS", "PHP"],
-    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879398/Prueba_t4amxb.png",
-    "url": "https://digitalrainreact.netlify.app/"
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "PHP",
+      "Node.js",
+      "JSON",
+      "ViteJS"
+    ],
+    "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
+    "url": "https://andespolygon.netlify.app/"
   },
   {
     "id": 2,
