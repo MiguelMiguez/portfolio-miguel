@@ -4,8 +4,8 @@ import linkedinIcon from "../../assets/linkedin.png";
 import githubIcon from "../../assets/github.png";
 import gmailIcon from "../../assets/gmail.png";
 import profile from "../../assets/profile.png";
+import cvFile from "../../assets/CV Miguel Miguez.pdf";
 
-// IDs de las secciones en orden
 const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos"];
 
 export default function Hero() {
@@ -78,7 +78,7 @@ export default function Hero() {
                         <a href="https://github.com/MiguelMiguez" target="_blank" rel="noopener noreferrer" className="hero-social-icon" aria-label="GitHub">
                             <img src={githubIcon} alt="GitHub" className="hero-icon" />
                         </a>
-                        <a href="/cv.pdf" className="hero-cv-btn" download>
+                        <a href={cvFile} className="hero-cv-btn" download>
                             CV <span className="hero-cv-arrow">↓</span>
                         </a>
                     </div>
