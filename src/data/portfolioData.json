@@ -27,9 +27,9 @@
       "id": 3,
       "title": "Campo Fertil",
       "description": "Diseño y desarrollo web para Campo Fértil S.R.L, una empresa agroindustrial líder en producción de granos, venta de agroquímicos y servicios agrícolas.",
-      "technologies": ["HTML", "SASS", "JavaScript", "JSON"],
+      "technologies": ["React.js", "CSS", "Vite", "JSON"],
       "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879400/Campo_fertil_pbebil.png",
-      "url": "https://campofertilsrl.netlify.app/"
+      "url": "https://campofertilreact.netlify.app/"
     },
     {
       "id": 4,
