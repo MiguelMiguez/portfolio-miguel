@@ -19,10 +19,10 @@ export default function Footer() {
                 </div>
                 <div className="footer-social">
                     <a href="https://github.com/MiguelMiguez" target="_blank" rel="noopener noreferrer" className="footer-icon-link" aria-label="GitHub">
-                        <img src={githubIcon} alt="GitHub" className="hero-icon" />
+                        <img src={githubIcon} alt="GitHub" />
                     </a>
                     <a href="https://linkedin.com/in/miguelmiguez/" target="_blank" rel="noopener noreferrer" className="footer-icon-link" aria-label="LinkedIn">
-                        <img src={linkedinIcon} alt="LinkedIn" className="hero-icon" />
+                        <img src={linkedinIcon} alt="LinkedIn" />
                     </a>
                 </div>
             </div>

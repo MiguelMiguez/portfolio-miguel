@@ -44,28 +44,31 @@ export default function Education({ lang }) {
             <div className="certifications-grid">
                 {certificates.map((cert, idx) => (
                     <div className="cert-card" key={idx}>
-                        <div className="cert-header"> <a
-                            href={cert.url || "#"}
-                            className="cert-title"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#df691f", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}
-                        >
-                            {cert.name}
-                        </a>
-                            <img src={salir} alt="externo" className="ico-externo" />
-                        </div>
+                        <a href={cert.url || "#"} target="_blank">
+                            <div className="cert-header"> <a
+                                href={cert.url || "#"}
+                                className="cert-title"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ color: "#df691f", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}
+                            >
+                                {cert.name}
+                            </a>
+                                <img src={salir} alt="externo" className="ico-externo" />
+                            </div>
 
-                        <ul className="cert-info">
-                            <li>{cert.institution}</li>
-                        </ul>
-                        <div className="cert-date">
-                            <b>{cert.date}</b>
-                        </div>
+                            <ul className="cert-info">
+                                <li>{cert.institution}</li>
+                            </ul>
+                            <div className="cert-date">
+                                <b>{cert.date}</b>
+                            </div>
+                        </a>
                     </div>
                 ))}
                 <div className="cert-cross" />
             </div>
+
         </section>
     );
 }

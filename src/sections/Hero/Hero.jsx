@@ -3,6 +3,7 @@ import "./Hero.css";
 import linkedinIcon from "../../assets/linkedin.png";
 import githubIcon from "../../assets/github.png";
 import gmailIcon from "../../assets/gmail.png";
+import fileIcon from "../../assets/fileIcon.png";
 import profile from "../../assets/profile.png";
 import cvFile from "../../assets/CV Miguel Miguez.pdf";
 
@@ -70,16 +71,17 @@ export default function Hero() {
                     </div>
                     <div className="hero-socials">
                         <a href="mailto:miguelmiguezangel@gmail.com" className="hero-social-icon" aria-label="Email">
-                            <img src={gmailIcon} alt="Email" className="hero-icon" />
+                            <img src={gmailIcon} alt="Email" />
                         </a>
                         <a href="https://linkedin.com/in/miguelmiguez/" target="_blank" rel="noopener noreferrer" className="hero-social-icon" aria-label="LinkedIn">
-                            <img src={linkedinIcon} alt="LinkedIn" className="hero-icon" />
+                            <img src={linkedinIcon} alt="LinkedIn" />
                         </a>
                         <a href="https://github.com/MiguelMiguez" target="_blank" rel="noopener noreferrer" className="hero-social-icon" aria-label="GitHub">
-                            <img src={githubIcon} alt="GitHub" className="hero-icon" />
+                            <img src={githubIcon} alt="GitHub" />
                         </a>
                         <a href={cvFile} className="hero-cv-btn" download>
-                            CV <span className="hero-cv-arrow">↓</span>
+                            ️CV
+                            <img src={fileIcon} alt="File" className="hero-icon" />
                         </a>
                     </div>
                 </div>
