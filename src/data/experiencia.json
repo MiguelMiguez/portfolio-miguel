@@ -1,20 +1,6 @@
 {
   "es": [
     {
-      "name": "Desarrollador Web Freelance",
-      "position": "Desarrollador Web Front-End",
-      "url": "",
-      "startDate": "2023",
-      "endDate": "Actualidad",
-      "summary": [
-        "Desarrollo de sitios web a medida para emprendimientos y pequeños negocios, incluyendo landing pages, e-commerce y portales informativos.",
-        "Diseño UX/UI enfocado en experiencia de usuario, accesibilidad y navegación intuitiva utilizando Figma.",
-        "Implementación de interfaces responsivas con HTML5, CSS3, JavaScript y React.",
-        "Gestión de servicios de hosting, dominios y despliegue de sitios en producción.",
-        "Asesoramiento técnico a clientes sobre arquitectura web, SEO básico y mantenimiento evolutivo."
-      ]
-    },
-    {
       "name": "Asociación de Cooperativas Argentinas",
       "position": "Desarrollador Front-End & Analista de Aplicaciones",
       "url": "https://www.acacoop.com.ar/",
@@ -26,6 +12,20 @@
         "Administración y análisis de bases de datos Oracle SQL para aplicaciones internas.",
         "Colaboración con equipos funcionales para automatización de procesos contables e impositivos.",
         "Gestión de tickets y seguimiento de incidencias en Jira Service Management."
+      ]
+    },
+    {
+      "name": "Desarrollador Web Freelance",
+      "position": "Desarrollador Web Front-End",
+      "url": "",
+      "startDate": "2022",
+      "endDate": "Actualidad",
+      "summary": [
+        "Desarrollo de sitios web a medida para emprendimientos y pequeños negocios, incluyendo landing pages, e-commerce y portales informativos.",
+        "Diseño UX/UI enfocado en experiencia de usuario, accesibilidad y navegación intuitiva utilizando Figma.",
+        "Implementación de interfaces responsivas con HTML5, CSS3, JavaScript y React.",
+        "Gestión de servicios de hosting, dominios y despliegue de sitios en producción.",
+        "Asesoramiento técnico a clientes sobre arquitectura web, SEO básico y mantenimiento evolutivo."
       ]
     },
     {
@@ -58,20 +58,6 @@
   ],
   "en": [
     {
-      "name": "Freelance Web Developer",
-      "position": "Front-End Web Developer",
-      "url": "",
-      "startDate": "2023",
-      "endDate": "Present",
-      "summary": [
-        "Custom website development for small businesses and entrepreneurs, including landing pages, e-commerce, and informational portals.",
-        "UX/UI design with a focus on usability, accessibility, and user flow using Figma.",
-        "Responsive interface development using HTML5, CSS3, JavaScript, and React.",
-        "Management of hosting, domain setup, and production deployment.",
-        "Technical consulting on web architecture, basic SEO, and site maintenance."
-      ]
-    },
-    {
       "name": "Asociación de Cooperativas Argentinas",
       "position": "Front-End Developer & Application Analyst",
       "url": "https://www.acacoop.com.ar/",
@@ -83,6 +69,20 @@
         "Database administration and analysis using Oracle SQL for internal business applications.",
         "Collaboration with functional teams to streamline accounting and tax-related processes.",
         "Ticket and incident tracking via Jira Service Management."
+      ]
+    },
+    {
+      "name": "Freelance Web Developer",
+      "position": "Front-End Web Developer",
+      "url": "",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": [
+        "Custom website development for small businesses and entrepreneurs, including landing pages, e-commerce, and informational portals.",
+        "UX/UI design with a focus on usability, accessibility, and user flow using Figma.",
+        "Responsive interface development using HTML5, CSS3, JavaScript, and React.",
+        "Management of hosting, domain setup, and production deployment.",
+        "Technical consulting on web architecture, basic SEO, and site maintenance."
       ]
     },
     {
