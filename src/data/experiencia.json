@@ -2,114 +2,86 @@
   "es": [
     {
       "name": "Asociación de Cooperativas Argentinas",
-      "position": "Desarrollador Front-End & Analista de Aplicaciones",
+      "position": "Desarrollador Front-End",
       "url": "https://www.acacoop.com.ar/",
       "startDate": "2022",
       "endDate": "Actualidad",
       "summary": [
-        "Desarrollo Front-End de aplicaciones móviles con React Native y Expo, con foco en rendimiento, escalabilidad y diseño UX/UI.",
-        "Participación en el diseño funcional de una app de gestión de flota, desde wireframes hasta prototipos interactivos.",
-        "Administración y análisis de bases de datos Oracle SQL para aplicaciones internas.",
-        "Colaboración con equipos funcionales para automatización de procesos contables e impositivos.",
-        "Gestión de tickets y seguimiento de incidencias en Jira Service Management."
+        "Participación en el desarrollo de una plataforma digital integral para la gestión de flotas vehiculares, compuesta por una aplicación móvil y un sistema web tipo backoffice.",
+        "En la aplicación móvil (React Native + Expo): implementación de autenticación corporativa con Microsoft, desarrollo de pantallas clave (listado y detalle de vehículos, historial, reservas, perfil), manejo de estados y consumo de APIs REST internas.",
+        "En el sistema web (React + TypeScript): construcción de formularios dinámicos, lógica de asignaciones y mantenimiento, integración con APIs REST documentadas en OpenAPI y optimización de navegación y filtrado.",
+        "Diseño modular basado en features, creación de componentes reutilizables y aplicación de buenas prácticas de código con ESLint y control de versiones.",
+        "Tecnologías utilizadas: React Native, Expo, TypeScript, React, CSS, Node.js, APIs REST, OpenAPI."
       ]
     },
     {
       "name": "Desarrollador Web Freelance",
-      "position": "Desarrollador Web Front-End",
+      "position": "Desarrollador Front-End",
       "url": "",
       "startDate": "2022",
       "endDate": "Actualidad",
       "summary": [
-        "Desarrollo de sitios web a medida para emprendimientos y pequeños negocios, incluyendo landing pages, e-commerce y portales informativos.",
-        "Diseño UX/UI enfocado en experiencia de usuario, accesibilidad y navegación intuitiva utilizando Figma.",
-        "Implementación de interfaces responsivas con HTML5, CSS3, JavaScript y React.",
-        "Gestión de servicios de hosting, dominios y despliegue de sitios en producción.",
-        "Asesoramiento técnico a clientes sobre arquitectura web, SEO básico y mantenimiento evolutivo."
+        "Diseño y desarrollo de soluciones web personalizadas para clientes de distintos sectores, priorizando la experiencia del usuario y la adaptabilidad a distintos dispositivos.",
+        "Implementación de un chatbot de reservas integrado con WhatsApp, automatizando la gestión de turnos y conectándolo con una API propia de administración de servicios.",
+        "Desarrollo de una plataforma web para el registro, administración y seguimiento de servicios, con paneles dinámicos y métricas de uso.",
+        "Creación de sitios web comerciales y landing pages, como Campo Fértil y Hooligang Cuts, con énfasis en rendimiento, SEO y diseño responsivo.",
+        "Desarrollo de proyectos personales y de práctica como Sneaker Solid e IphoneZS, aplicando React, Firebase, y Node.js para simular entornos de e-commerce reales.",
+        "Tecnologías utilizadas: React.js, TypeScript, Node.js, Tailwind CSS, SASS, Firebase, APIs REST, Cal.com, Vite, Bootstrap."
       ]
     },
     {
-      "name": "Compass Group",
-      "position": "Analista de Soporte",
-      "url": "",
-      "startDate": "2021",
-      "endDate": "2022",
-      "summary": [
-        "Administración de usuarios en Active Directory, Exchange y Azure AD para garantizar seguridad y disponibilidad.",
-        "Creación y mantenimiento de imágenes de Windows 10 para automatizar la provisión de equipos.",
-        "Documentación técnica y elaboración de instructivos en la base de conocimiento interna.",
-        "Resolución de incidencias técnicas de nivel 1 y 2 mediante Service Desk, orientado a usuarios corporativos."
-      ]
-    },
-    {
-      "name": "Mobisond",
-      "position": "Analista de Soporte & Coordinador Técnico",
+      "name": "Experiencia Técnica Fundacional",
+      "position": "Soporte Técnico y Coordinación",
       "url": "",
       "startDate": "2019",
-      "endDate": "2021",
+      "endDate": "2022",
       "summary": [
-        "Configuración de switches Huawei y routers para redes LAN/WAN en entornos hospitalarios.",
-        "Clonación masiva de servidores Huawei para implementación educativa (Programa Educar).",
-        "Coordinación técnica de equipos de campo para instalación de conectividad en CABA.",
-        "Migración de equipos de Windows 7 a Windows 10, asegurando compatibilidad de software y hardware.",
-        "Implementación de tecnología de telefonía IP y Wi-Fi Cisco en oficinas y salas de conferencia."
+        "Soporte técnico en entornos corporativos y resolución de incidencias complejas.",
+        "Gestión de infraestructura de redes, servidores y servicios en la nube (Azure AD).",
+        "Elaboración de documentación técnica y asistencia en la coordinación de equipos de soporte."
       ]
     }
   ],
   "en": [
     {
       "name": "Asociación de Cooperativas Argentinas",
-      "position": "Front-End Developer & Application Analyst",
+      "position": "Front-End Developer",
       "url": "https://www.acacoop.com.ar/",
       "startDate": "2022",
       "endDate": "Present",
       "summary": [
-        "Front-End development of mobile applications using React Native and Expo, focusing on performance, scalability, and UX/UI design.",
-        "Contributed to the UX design of a fleet management app, from wireframes to interactive prototypes.",
-        "Database administration and analysis using Oracle SQL for internal business applications.",
-        "Collaboration with functional teams to streamline accounting and tax-related processes.",
-        "Ticket and incident tracking via Jira Service Management."
+        "Contributed to the development of a digital platform for vehicle fleet management, including a mobile app and a backoffice web system.",
+        "Mobile app (React Native + Expo): implemented corporate authentication (Microsoft), developed key views (vehicle list and details, maintenance history, booking calendar, user profile), handled state management, and consumed internal REST APIs.",
+        "Web system (React + TypeScript): developed dynamic forms, maintenance and assignment logic, API integrations documented with OpenAPI, and optimized navigation and filtering.",
+        "Applied modular architecture based on features, built reusable UI components, and maintained clean code standards with ESLint and version control.",
+        "Technologies used: React Native, Expo, TypeScript, React, CSS, Node.js, REST APIs, OpenAPI."
       ]
     },
     {
       "name": "Freelance Web Developer",
-      "position": "Front-End Web Developer",
+      "position": "Front-End Developer",
       "url": "",
       "startDate": "2022",
       "endDate": "Present",
       "summary": [
-        "Custom website development for small businesses and entrepreneurs, including landing pages, e-commerce, and informational portals.",
-        "UX/UI design with a focus on usability, accessibility, and user flow using Figma.",
-        "Responsive interface development using HTML5, CSS3, JavaScript, and React.",
-        "Management of hosting, domain setup, and production deployment.",
-        "Technical consulting on web architecture, basic SEO, and site maintenance."
+        "Designed and developed custom web solutions for clients across different sectors, focusing on responsive design and user experience.",
+        "Built a WhatsApp-integrated booking chatbot, automating appointment management and connecting it to a custom service administration API.",
+        "Developed a web platform for service registration and monitoring, including dynamic dashboards and usage metrics.",
+        "Created commercial websites and landing pages (Campo Fértil, Hooligang Cuts), optimizing performance, SEO, and accessibility.",
+        "Developed personal and training projects (Sneaker Solid, IphoneZS) using React, Firebase, and Node.js to simulate real e-commerce environments.",
+        "Technologies used: React.js, TypeScript, Node.js, Tailwind CSS, SASS, Firebase, REST APIs, Cal.com, Vite, Bootstrap."
       ]
     },
     {
-      "name": "Compass Group",
-      "position": "Support Analyst",
-      "url": "",
-      "startDate": "2021",
-      "endDate": "2022",
-      "summary": [
-        "User administration across Active Directory, Exchange, and Azure AD to ensure secure access and service continuity.",
-        "Created and maintained Windows 10 images to automate device provisioning.",
-        "Produced internal knowledge base documentation to assist with self-service issue resolution.",
-        "Provided L1/L2 technical support via Service Desk to corporate users."
-      ]
-    },
-    {
-      "name": "Mobisond",
-      "position": "Support Analyst & Technical Coordinator",
+      "name": "Foundational Technical Experience",
+      "position": "Technical Support & Coordination",
       "url": "",
       "startDate": "2019",
-      "endDate": "2021",
+      "endDate": "2022",
       "summary": [
-        "Configured Huawei switches and routers for LAN/WAN networks in healthcare environments.",
-        "Mass server cloning for large-scale educational deployments (Educar program).",
-        "Technical coordination of on-site teams for network installations across Buenos Aires.",
-        "OS migration from Windows 7 to Windows 10, ensuring full hardware and software compatibility.",
-        "Implemented Cisco IP telephony and Wi-Fi infrastructure in corporate and conference spaces."
+        "Provided technical support in corporate environments and resolved complex incidents.",
+        "Worked with network infrastructure, servers, and cloud services (Azure AD).",
+        "Created technical documentation and assisted in coordinating support teams."
       ]
     }
   ]
