@@ -2,18 +2,21 @@
   "es": [
     {
       "id": 1,
-      "title": "Andes Polygon",
-      "description": "Diseño de landing page para una Start-Up de desarrollo web, trabajando en colaboración para ofrecer soluciones innovadoras y de calidad.",
+      "title": "Booking-Bot",
+      "description": "Desarrollo de un bot de reservas para WhatsApp con integración de inteligencia artificial utilizando whatsapp.js, Node.js, permitiendo a los usuarios programar citas de manera automatizada a través de mensajes de WhatsApp, integrando una base de datos para gestionar las reservas y un panel de administración para facilitar la gestión de las mismas y la alta de nuevos servicios para los clientes.",
       "technologies": [
-        "React.js",
-        "Tailwind CSS",
-        "PHP",
+        "React",
+        "CSS",
+        "TypeScript",
+        "Firebase",
         "Node.js",
-        "JSON",
-        "ViteJS"
+        "OpenAI",
+        "DialogFlow",
+        "APIs REST",
+        "whatsapp.js"
       ],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
-      "url": "https://andespolygon.netlify.app/"
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
+      "url": "https://booking-bot-wpp.web.app/"
     },
     {
       "id": 2,
@@ -33,34 +36,8 @@
     },
     {
       "id": 4,
-      "title": "Mikem'Store",
-      "description": "Mi primer proyecto de desarrollo web, creado como parte del curso de desarrollo web de CoderHouse.",
-      "technologies": ["HTML", "SASS", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879791/mikemstore_gbnduf.png",
-      "url": "https://mikemstore.netlify.app/"
-    },
-    {
-      "id": 5,
-      "title": "Sneaker Solid",
-      "description": "Tienda E-Commerce, desarrollada para el curso de JavaScript en CoderHouse.",
-      "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
-      "url": "https://sneakersolid.netlify.app/"
-    },
-    {
-      "id": 6,
-      "title": "IphoneZS",
-      "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
-      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
-      "url": "https://iphonezs.netlify.app/"
-    }
-  ],
-  "en": [
-    {
-      "id": 1,
       "title": "Andes Polygon",
-      "description": "Landing page design for a web development Start-Up, collaborating to deliver innovative and high-quality solutions.",
+      "description": "Diseño de landing page para una Start-Up de desarrollo web, trabajando en colaboración para ofrecer soluciones innovadoras y de calidad.",
       "technologies": [
         "React.js",
         "Tailwind CSS",
@@ -71,6 +48,58 @@
       ],
       "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
       "url": "https://andespolygon.netlify.app/"
+    },
+    {
+      "id": 5,
+      "title": "Mikem'Store",
+      "description": "Mi primer proyecto de desarrollo web, creado como parte del curso de desarrollo web de CoderHouse.",
+      "technologies": ["HTML", "SASS", "Bootstrap"],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879791/mikemstore_gbnduf.png",
+      "url": "https://mikemstore.netlify.app/"
+    },
+    {
+      "id": 6,
+      "title": "Sneaker Solid",
+      "description": "Tienda E-Commerce, desarrollada para el curso de JavaScript en CoderHouse.",
+      "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
+      "url": "https://sneakersolid.netlify.app/"
+    },
+    {
+      "id": 7,
+      "title": "IphoneZS",
+      "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
+      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
+      "url": "https://iphonezs.netlify.app/"
+    },
+    {
+      "id": 8,
+      "title": "IphoneZS",
+      "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
+      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
+      "url": "https://iphonezs.netlify.app/"
+    }
+  ],
+  "en": [
+    {
+      "id": 1,
+      "title": "Booking-Bot",
+      "description": "Development of a booking bot for WhatsApp with artificial intelligence integration using whatsapp.js, Node.js, allowing users to schedule appointments automatically through WhatsApp messages, integrating a database to manage bookings and an administration panel to facilitate their management and the registration of new services for customers.",
+      "technologies": [
+        "React",
+        "CSS",
+        "TypeScript",
+        "Firebase",
+        "Node.js",
+        "OpenAI",
+        "DialogFlow",
+        "APIs REST",
+        "whatsapp.js"
+      ],
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
+      "url": "https://booking-bot-wpp.web.app/"
     },
     {
       "id": 2,
@@ -90,6 +119,21 @@
     },
     {
       "id": 4,
+      "title": "Andes Polygon",
+      "description": "Landing page design for a web development Start-Up, collaborating to deliver innovative and high-quality solutions.",
+      "technologies": [
+        "React.js",
+        "Tailwind CSS",
+        "PHP",
+        "Node.js",
+        "JSON",
+        "ViteJS"
+      ],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
+      "url": "https://andespolygon.netlify.app/"
+    },
+    {
+      "id": 5,
       "title": "Mikem'Store",
       "description": "My first web development project, created as part of the web development course at CoderHouse.",
       "technologies": ["HTML", "SASS", "Bootstrap"],
@@ -97,7 +141,7 @@
       "url": "https://mikemstore.netlify.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Sneaker Solid",
       "description": "E-Commerce store, developed for the JavaScript course at CoderHouse.",
       "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
@@ -105,7 +149,15 @@
       "url": "https://sneakersolid.netlify.app/"
     },
     {
-      "id": 6,
+      "id": 7,
+      "title": "IphoneZS",
+      "description": "E-Commerce store, expanded with sales simulation including order numbers for a more complete experience.",
+      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
+      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
+      "url": "https://iphonezs.netlify.app/"
+    },
+    {
+      "id": 8,
       "title": "IphoneZS",
       "description": "E-Commerce store, expanded with sales simulation including order numbers for a more complete experience.",
       "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
