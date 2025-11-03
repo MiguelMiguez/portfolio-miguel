@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Booking-Bot",
-      "description": "Desarrollo de un bot de reservas para WhatsApp con integración de inteligencia artificial utilizando whatsapp.js, Node.js, permitiendo a los usuarios programar citas de manera automatizada a través de mensajes de WhatsApp, integrando una base de datos para gestionar las reservas y un panel de administración para facilitar la gestión de las mismas y la alta de nuevos servicios para los clientes.",
+      "description": "Desarrollo de un bot de reservas para WhatsApp con integración de inteligencia artificial.",
       "technologies": [
         "React",
         "CSS",
@@ -12,8 +12,7 @@
         "Node.js",
         "OpenAI",
         "DialogFlow",
-        "APIs REST",
-        "whatsapp.js"
+        "APIs REST"
       ],
       "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
       "url": "https://booking-bot-wpp.web.app/"
@@ -72,21 +71,13 @@
       "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
       "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
       "url": "https://iphonezs.netlify.app/"
-    },
-    {
-      "id": 8,
-      "title": "IphoneZS",
-      "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
-      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
-      "url": "https://iphonezs.netlify.app/"
     }
   ],
   "en": [
     {
       "id": 1,
       "title": "Booking-Bot",
-      "description": "Development of a booking bot for WhatsApp with artificial intelligence integration using whatsapp.js, Node.js, allowing users to schedule appointments automatically through WhatsApp messages, integrating a database to manage bookings and an administration panel to facilitate their management and the registration of new services for customers.",
+      "description": "Development of a booking bot for WhatsApp with artificial intelligence integration.",
       "technologies": [
         "React",
         "CSS",
@@ -95,8 +86,7 @@
         "Node.js",
         "OpenAI",
         "DialogFlow",
-        "APIs REST",
-        "whatsapp.js"
+        "APIs REST"
       ],
       "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
       "url": "https://booking-bot-wpp.web.app/"
@@ -150,14 +140,6 @@
     },
     {
       "id": 7,
-      "title": "IphoneZS",
-      "description": "E-Commerce store, expanded with sales simulation including order numbers for a more complete experience.",
-      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
-      "url": "https://iphonezs.netlify.app/"
-    },
-    {
-      "id": 8,
       "title": "IphoneZS",
       "description": "E-Commerce store, expanded with sales simulation including order numbers for a more complete experience.",
       "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
