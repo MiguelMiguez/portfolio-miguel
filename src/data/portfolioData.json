@@ -63,14 +63,6 @@
       "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
       "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
       "url": "https://sneakersolid.netlify.app/"
-    },
-    {
-      "id": 7,
-      "title": "IphoneZS",
-      "description": "Tienda E-Commerce , ampliada con simulación de ventas que incluye números de orden de compra para una experiencia más completa.",
-      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
-      "url": "https://iphonezs.netlify.app/"
     }
   ],
   "en": [
@@ -137,14 +129,6 @@
       "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
       "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
       "url": "https://sneakersolid.netlify.app/"
-    },
-    {
-      "id": 7,
-      "title": "IphoneZS",
-      "description": "E-Commerce store, expanded with sales simulation including order numbers for a more complete experience.",
-      "technologies": ["React", "CSS", "Firebase", "Node.js", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879794/IphoneZs_isjk7l.png",
-      "url": "https://iphonezs.netlify.app/"
     }
   ]
 }
