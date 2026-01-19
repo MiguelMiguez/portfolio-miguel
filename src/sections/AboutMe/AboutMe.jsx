@@ -5,12 +5,12 @@ import aboutmeData from "../../data/aboutme.json";
 
 export default function AboutMe({ lang }) {
     const [width, setWidth] = React.useState(
-        window.innerWidth >= 1280 ? 420 : 320
+        window.innerWidth >= 1280 ? 600 : 400
     );
 
     React.useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth >= 1280 ? 420 : 320);
+            setWidth(window.innerWidth >= 1280 ? 600 : 400);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
