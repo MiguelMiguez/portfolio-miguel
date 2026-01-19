@@ -1,0 +1,23 @@
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-switcher:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.lang-text {
+  letter-spacing: 0.05em;
+}

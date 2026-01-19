@@ -1,4 +1,5 @@
 import React from "react";
+import { ExternalLink } from "lucide-react";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ project }) => {
@@ -10,7 +11,12 @@ const ProjectCard = ({ project }) => {
             className="project-card"
         >
             {project.image && (
-                <img src={project.image} alt={project.title} className="project-image" />
+                <div className="project-image-wrapper">
+                    <img src={project.image} alt={project.title} className="project-image" />
+                    <div className="project-overlay">
+                        <ExternalLink size={24} />
+                    </div>
+                </div>
             )}
             <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>

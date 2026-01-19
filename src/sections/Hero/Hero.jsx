@@ -1,96 +1,80 @@
 import React from "react";
+import { Mail, Linkedin, Github, Download } from "lucide-react";
 import "./Hero.css";
-import linkedinIcon from "../../assets/linkedin.png";
-import githubIcon from "../../assets/github.png";
-import gmailIcon from "../../assets/gmail.png";
-import fileIcon from "../../assets/fileIcon.png";
 import profile from "../../assets/profile.png";
 import cvFile from "../../assets/CV Miguel Miguez.pdf";
 
-const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos"];
+const heroTexts = {
+    es: {
+        badge: "Desarrollador Front-End",
+        description: "Desarrollador apasionado por crear experiencias web modernas, accesibles y de alto rendimiento.",
+        downloadCV: "Descargar CV"
+    },
+    en: {
+        badge: "Front-End Developer",
+        description: "Passionate developer creating modern, accessible, and high-performance web experiences.",
+        downloadCV: "Download CV"
+    }
+};
 
-export default function Hero() {
-
-    const [isAtLastSection, setIsAtLastSection] = React.useState(false);
-
-    const handleScrollToNext = () => {
-
-        const currentIdx = sectionIds.findIndex(id => {
-            const el = document.getElementById(id);
-            if (!el) return false;
-            const rect = el.getBoundingClientRect();
-            return rect.top >= -100 && rect.top < window.innerHeight / 2;
-        });
-
-
-        if (currentIdx === sectionIds.length - 1) {
-            const firstSection = document.getElementById(sectionIds[0]);
-            if (firstSection) {
-                firstSection.scrollIntoView({ behavior: "smooth" });
-            }
-            setIsAtLastSection(false);
-        } else {
-
-            const nextIdx = currentIdx === -1 ? 1 : currentIdx + 1;
-            const nextSection = document.getElementById(sectionIds[nextIdx]);
-            if (nextSection) {
-                nextSection.scrollIntoView({ behavior: "smooth" });
-            }
-
-            setIsAtLastSection(nextIdx === sectionIds.length - 1);
-        }
-    };
-
-
-    React.useEffect(() => {
-        const onScroll = () => {
-            const proyectos = document.getElementById("proyectos");
-            if (proyectos) {
-                const rect = proyectos.getBoundingClientRect();
-                const isVisible = rect.top >= -100 && rect.top < window.innerHeight / 2;
-                setIsAtLastSection(isVisible);
-            }
-        };
-        window.addEventListener("scroll", onScroll, { passive: true });
-        onScroll();
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
+export default function Hero({ lang = "es" }) {
+    const texts = heroTexts[lang];
 
     return (
         <section className="hero-section" id="inicio">
             <div className="hero-content">
                 <div className="hero-info">
-                    <h1>
-                        <span className="hero-name-white">Miguel</span>
-                        <br />
-                        <span className="hero-name-orange">Miguez</span>
+                    <div className="hero-badge">{texts.badge}</div>
+                    <h1 className="hero-title">
+                        <span className="hero-name-primary">Miguel</span>
+                        <span className="hero-name-accent">Miguez</span>
                     </h1>
-                    <div className="hero-role">
-                        <span className="hero-role-line"></span>
-                        <span className="hero-role-text">Front-End developer</span>
-                    </div>
-                    <div className="hero-socials">
-                        <a href="mailto:miguelmiguezangel@gmail.com" className="hero-social-icon" aria-label="Email">
-                            <img src={gmailIcon} alt="Email" />
+                    <p className="hero-description">
+                        {texts.description}
+                    </p>
+                    <div className="hero-actions">
+                        <a href={cvFile} className="hero-btn hero-btn-primary" download>
+                            <Download size={18} />
+                            {texts.downloadCV}
                         </a>
-                        <a href="https://linkedin.com/in/miguelmiguez/" target="_blank" rel="noopener noreferrer" className="hero-social-icon" aria-label="LinkedIn">
-                            <img src={linkedinIcon} alt="LinkedIn" />
-                        </a>
-                        <a href="https://github.com/MiguelMiguez" target="_blank" rel="noopener noreferrer" className="hero-social-icon" aria-label="GitHub">
-                            <img src={githubIcon} alt="GitHub" />
-                        </a>
-                        <a href={cvFile} className="hero-cv-btn" download>
-                            ️CV
-                            <img src={fileIcon} alt="File" className="hero-icon" />
-                        </a>
+                        <div className="hero-socials">
+                            <a
+                                href="mailto:miguelmiguezangel@gmail.com"
+                                className="hero-social-link"
+                                aria-label="Email"
+                            >
+                                <Mail size={20} />
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/miguelmiguez/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hero-social-link"
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin size={20} />
+                            </a>
+                            <a
+                                href="https://github.com/MiguelMiguez"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hero-social-link"
+                                aria-label="GitHub"
+                            >
+                                <Github size={20} />
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div className="hero-photo">
-                    <img
-                        src={profile}
-                        alt="Miguel Miguez"
-                        className="hero-img"
-                    />
+                <div className="hero-visual">
+                    <div className="hero-image-wrapper">
+                        <img
+                            src={profile}
+                            alt="Miguel Miguez"
+                            className="hero-img"
+                        />
+                        <div className="hero-image-ring"></div>
+                    </div>
                 </div>
             </div>
         </section>

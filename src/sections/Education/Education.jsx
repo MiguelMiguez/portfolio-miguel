@@ -1,7 +1,7 @@
 import React from "react";
+import { GraduationCap, Award, ExternalLink } from "lucide-react";
 import data from "../../data/education.json";
 import "./Education.css";
-import salir from "../../assets/salir.png";
 
 const sectionTitles = {
     es: {
@@ -20,55 +20,58 @@ export default function Education({ lang }) {
 
     return (
         <section className="education-section" id="formacion">
-            <h2 className="education-title">{sectionTitles[lang].education}</h2>
-            <div className="education-main">
+            <div className="education-header">
+                <span className="section-label">Aprendizaje</span>
+                <h2 className="section-title">{sectionTitles[lang].education}</h2>
+            </div>
+
+            <div className="education-grid">
                 {education.map((edu, idx) => (
-                    <div className="education-block" key={idx}>
-                        <h3 className="education-institution">
-                            <b>
+                    <div className="education-card" key={idx}>
+                        <div className="education-card-icon">
+                            <GraduationCap size={24} />
+                        </div>
+                        <div className="education-card-content">
+                            <h3 className="education-institution">
                                 <a href={edu.url || "#"} target="_blank" rel="noopener noreferrer">
                                     {edu.institution}
+                                    <ExternalLink size={14} />
                                 </a>
-                            </b>
-                        </h3>
-                        <div className="education-period">
-                            {edu.startDate} - {edu.endDate}
+                            </h3>
+                            <span className="education-period">
+                                {edu.startDate} — {edu.endDate}
+                            </span>
+                            <p className="education-area">{edu.area}</p>
                         </div>
-                        <ul className="education-area">
-                            <li>{edu.area}</li>
-                        </ul>
                     </div>
                 ))}
             </div>
-            <h2 className="certifications-title">{sectionTitles[lang].certificates}</h2>
-            <div className="certifications-grid">
+
+            <div className="certificates-header">
+                <h2 className="section-title">{sectionTitles[lang].certificates}</h2>
+            </div>
+
+            <div className="certificates-grid">
                 {certificates.map((cert, idx) => (
-                    <div className="cert-card" key={idx}>
-                        <a href={cert.url || "#"} target="_blank">
-                            <div className="cert-header"> <a
-                                href={cert.url || "#"}
-                                className="cert-title"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ color: "#df691f", fontWeight: 700, fontSize: "1.2rem", textDecoration: "none" }}
-                            >
-                                {cert.name}
-                            </a>
-                                <img src={salir} alt="externo" className="ico-externo" />
-                            </div>
-
-                            <ul className="cert-info">
-                                <li>{cert.institution}</li>
-                            </ul>
-                            <div className="cert-date">
-                                <b>{cert.date}</b>
-                            </div>
-                        </a>
-                    </div>
+                    <a
+                        href={cert.url || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="certificate-card"
+                        key={idx}
+                    >
+                        <div className="certificate-icon">
+                            <Award size={20} />
+                        </div>
+                        <div className="certificate-content">
+                            <h3 className="certificate-name">{cert.name}</h3>
+                            <span className="certificate-issuer">{cert.institution}</span>
+                            <span className="certificate-date">{cert.date}</span>
+                        </div>
+                        <ExternalLink size={16} className="certificate-link-icon" />
+                    </a>
                 ))}
-                <div className="cert-cross" />
             </div>
-
         </section>
     );
 }

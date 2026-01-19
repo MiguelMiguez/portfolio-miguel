@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Briefcase, ExternalLink } from "lucide-react";
 import experienciaData from "../../data/experiencia.json";
 import "./Experiencie.css";
 
@@ -10,57 +11,51 @@ const sectionTitles = {
 export default function Experiencie({ lang }) {
   const experiencia = experienciaData[lang];
   const [activeIdx, setActiveIdx] = useState(0);
-  const isMobile = window.innerWidth <= 900;
-
-  const handleScrollTo = (idx) => {
-    setActiveIdx(idx);
-  };
 
   return (
-    <section className="experiencie-section" id="experiencia">
-      <h2 className="experiencie-title">{sectionTitles[lang]}</h2>
-      <div className="experiencie-timeline-container">
-        <div className="experiencie-timeline">
+    <section className="experience-section" id="experiencia">
+      <div className="experience-header">
+        <span className="section-label">Trayectoria</span>
+        <h2 className="section-title">{sectionTitles[lang]}</h2>
+      </div>
+
+      <div className="experience-container">
+        <div className="experience-timeline">
           {experiencia.map((exp, idx) => (
-            <div key={idx} className="experiencie-timeline-point">
-              <button
-                className={`experiencie-timeline-dot${activeIdx === idx ? " active" : ""}`}
-                onClick={() => handleScrollTo(idx)}
-                aria-label={`Go to experience from ${exp.startDate}`}
-              />
-              <button
-                className={`experiencie-timeline-year${activeIdx === idx ? " active" : ""}`}
-                onClick={() => handleScrollTo(idx)}
-              >
-                {exp.startDate}
-              </button>
-
-              {idx < experiencia.length - 1 && <div className="experiencie-timeline-line" />}
-
-              {isMobile && idx === experiencia.length - 1 && (
-                <div className="experiencie-timeline-line experiencie-timeline-line-mobile-extra" />
-              )}
-            </div>
+            <button
+              key={idx}
+              className={`timeline-item${activeIdx === idx ? " active" : ""}`}
+              onClick={() => setActiveIdx(idx)}
+            >
+              <div className="timeline-dot">
+                <Briefcase size={14} />
+              </div>
+              <div className="timeline-info">
+                <span className="timeline-year">{exp.startDate}</span>
+                <span className="timeline-company">{exp.name}</span>
+              </div>
+            </button>
           ))}
+          <div className="timeline-line" />
         </div>
-        <div className="experiencie-details">
-          <div
-            className="experiencie-detail experiencie-detail-animated"
-            key={activeIdx}
-            tabIndex={-1}
-          >
-            <h3 className="experiencie-company">
-              <a href={experiencia[activeIdx].url} target="_blank" rel="noopener noreferrer">
-                {experiencia[activeIdx].name}
-              </a>
-            </h3>
-            <div className="experiencie-period">
-              {experiencia[activeIdx].startDate} - {experiencia[activeIdx].endDate}
+
+        <div className="experience-details">
+          <div className="experience-card" key={activeIdx}>
+            <div className="experience-card-header">
+              <h3 className="experience-company">
+                <a href={experiencia[activeIdx].url} target="_blank" rel="noopener noreferrer">
+                  {experiencia[activeIdx].name}
+                  <ExternalLink size={16} />
+                </a>
+              </h3>
+              <span className="experience-period">
+                {experiencia[activeIdx].startDate} — {experiencia[activeIdx].endDate}
+              </span>
             </div>
-            <div className="experiencie-position">{experiencia[activeIdx].position}</div>
-            <ul className="experiencie-summary">
+            <p className="experience-position">{experiencia[activeIdx].position}</p>
+            <ul className="experience-summary">
               {experiencia[activeIdx].summary?.map((item, i) => (
-                <li className="experiencie-summary-item" key={i}>{item}</li>
+                <li key={i}>{item}</li>
               ))}
             </ul>
           </div>

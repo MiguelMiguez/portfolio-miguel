@@ -1,55 +1,87 @@
 .tech-section {
+  width: 100%;
+  min-height: 80vh;
+  background: var(--bg-secondary);
   display: flex;
-  padding: 2rem 0;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  margin-bottom: 2rem;
-  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
 }
 
-.tech-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
+.tech-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.875rem;
   font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 2rem 2rem;
-  align-items: center;
+  gap: 0.75rem;
+  max-width: 800px;
   justify-content: center;
 }
 
 .tech-card {
-  background: #242323;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  padding: 1.2rem 0.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s;
-  backdrop-filter: blur(10px);
-  width: 120px;
+  gap: 0.625rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: all 0.2s ease;
 }
 
 .tech-card:hover {
-  box-shadow: 0 4px 16px rgba(223, 105, 31, 0.18);
+  border-color: var(--skill-color, var(--accent));
+  background: color-mix(
+    in srgb,
+    var(--skill-color, var(--accent)) 10%,
+    transparent
+  );
+  transform: translateY(-2px);
 }
 
-.tech-icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.tech-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--skill-color, var(--accent));
 }
 
 .tech-label {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .tech-grid {
+    gap: 0.5rem;
+  }
+
+  .tech-card {
+    padding: 0.625rem 1rem;
+  }
+
+  .tech-label {
+    font-size: 0.875rem;
+  }
 }

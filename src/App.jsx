@@ -1,17 +1,15 @@
-import { useState } from 'react'
 import React from 'react'
 import './App.css'
 import Home from './pages/Home'
 import MouseTracker from './components/MouseTracker/MouseTracker'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <ThemeProvider>
       <MouseTracker />
       <Home />
-    </>
+    </ThemeProvider>
   )
 }
 

@@ -14,16 +14,16 @@ const Home = () => {
     const handleLangChange = () => setLang(prev => prev === "es" ? "en" : "es");
 
     return (
-        <div className="bg-[#202020] text-white min-h-screen">
+        <div className="home-container">
             <Navbar lang={lang} onLangChange={handleLangChange} />
             <ButtonScroll />
-            <Hero />
+            <Hero lang={lang} />
             <AboutMe lang={lang} />
             <Experiencie lang={lang} />
             <Education lang={lang} />
             <Portfolio lang={lang} />
             <Tech lang={lang} />
-            <Footer />
+            <Footer lang={lang} />
         </div>
     )
 }

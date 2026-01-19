@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 import "./Navbar.css";
 import LangSwitcher from "../LangSwitcher/LangSwitcher";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const navLinksData = {
   es: [
@@ -38,10 +40,10 @@ export default function Navbar({ lang, onLangChange }) {
       <div className="navbar-desktop">
         <div className="navbar-logo">
           <span className="navbar-logo-white">m</span>
-          <span className="navbar-logo-orange">m</span>
+          <span className="navbar-logo-accent">m</span>
         </div>
 
-        <div className="navbar-links-bg">
+        <div className="navbar-links-pill">
           {navLinks.map(({ id, label }) => (
             <a
               key={id}
@@ -54,7 +56,8 @@ export default function Navbar({ lang, onLangChange }) {
           ))}
         </div>
 
-        <div>
+        <div className="navbar-actions">
+          <ThemeToggle />
           <LangSwitcher lang={lang} onChange={onLangChange} />
         </div>
       </div>
@@ -63,21 +66,22 @@ export default function Navbar({ lang, onLangChange }) {
         <button
           className="navbar-burger"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
         >
-          <span className="navbar-burger-bar"></span>
-          <span className="navbar-burger-bar"></span>
-          <span className="navbar-burger-bar"></span>
+          <Menu size={24} />
         </button>
 
-        <div
-          className={`navbar-mobile-menu${menuOpen ? " open" : ""}`}
-        >
+        <div className={`navbar-mobile-overlay${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen(false)} />
+
+        <div className={`navbar-mobile-menu${menuOpen ? " open" : ""}`}>
           <button
             className="navbar-mobile-close"
             onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
           >
-            ×
+            <X size={24} />
           </button>
+
           <div className="navbar-mobile-links">
             {navLinks.map(({ id, label }) => (
               <a
@@ -89,7 +93,10 @@ export default function Navbar({ lang, onLangChange }) {
                 {label}
               </a>
             ))}
+          </div>
 
+          <div className="navbar-mobile-actions">
+            <ThemeToggle />
             <LangSwitcher lang={lang} onChange={onLangChange} />
           </div>
         </div>

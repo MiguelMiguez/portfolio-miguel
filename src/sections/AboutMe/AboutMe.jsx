@@ -5,12 +5,12 @@ import aboutmeData from "../../data/aboutme.json";
 
 export default function AboutMe({ lang }) {
     const [width, setWidth] = React.useState(
-        window.innerWidth >= 1280 ? 500 : 350
+        window.innerWidth >= 1280 ? 420 : 320
     );
 
     React.useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth >= 1280 ? 600 : 350);
+            setWidth(window.innerWidth >= 1280 ? 420 : 320);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -18,7 +18,7 @@ export default function AboutMe({ lang }) {
 
     return (
         <section className="aboutme-section" id="sobremi">
-            <div className="aboutme-content">
+            <div className="aboutme-container">
                 <div className="aboutme-animation">
                     <DotLottieReact
                         src="https://lottie.host/12ba1661-ac3c-4fbb-8d9f-38a7e2ccf50f/fKe9yg4mVe.lottie"
@@ -27,12 +27,13 @@ export default function AboutMe({ lang }) {
                         style={{ width: `${width}px`, maxWidth: "100%" }}
                     />
                 </div>
-                <div className="aboutme-info">
+                <div className="aboutme-content">
+                    <span className="section-label">Conóceme</span>
                     <h2 className="aboutme-title">
                         {aboutmeData[lang].title1}
-                        <span className="aboutme-orange">{aboutmeData[lang].title2}</span>
+                        <span className="text-accent">{aboutmeData[lang].title2}</span>
                     </h2>
-                    <p>{aboutmeData[lang].description}</p>
+                    <p className="aboutme-description">{aboutmeData[lang].description}</p>
                 </div>
             </div>
         </section>

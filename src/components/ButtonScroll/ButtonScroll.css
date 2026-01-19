@@ -1,29 +1,31 @@
-.hero-next-btn {
+.scroll-btn {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
-  z-index: 1;
-  transition: transform 0.3s, bottom 0.3s;
-  font-size: 2rem;
-  background: none;
+  z-index: 50;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
   border: none;
-  color: #fff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  margin: 0;
-  display: block;
-  transition: 1s;
+  box-shadow: var(--shadow-accent);
+  transition: all 0.3s ease;
 }
 
-.hero-next-btn.rotated {
-  transform: translateX(-50%) rotate(180deg);
+.scroll-btn:hover {
+  background: var(--accent-hover);
+  transform: translateX(-50%) translateY(-4px);
 }
 
-.hero-next-btn .arrow {
-  display: inline-block;
-  transition: transform 0.3s;
-}
-
-.hero-next-btn.rotated .arrow {
-  transform: rotate(180deg);
+@media (max-width: 768px) {
+  .scroll-btn {
+    width: 44px;
+    height: 44px;
+  }
 }

@@ -1,66 +1,79 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import portfolioData from "../../data/portfolioData.json";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Portfolio.css";
 
 const sectionTitles = {
-  es: "Proyectos",
-  en: "Projects"
+  es: {
+    title: "Proyectos",
+    subtitle: "Una selección de mis trabajos más recientes",
+    viewProject: "Ver proyecto"
+  },
+  en: {
+    title: "Projects",
+    subtitle: "A selection of my most recent work",
+    viewProject: "View project"
+  }
 };
 
 const Portfolio = ({ lang }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 900);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  const [hoveredId, setHoveredId] = useState(null);
   const projects = portfolioData[lang] || [];
-  const itemsPerPage = isMobile ? 1 : 3;
-  const totalPages = Math.ceil(projects.length / itemsPerPage);
-
-  const goToSlide = (idx) => {
-    if (idx === currentIndex || animating) return;
-    setAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex(idx);
-      setAnimating(false);
-    }, 400);
-  };
-
-  const currentProjects = projects.slice(
-    currentIndex * itemsPerPage,
-    currentIndex * itemsPerPage + itemsPerPage
-  );
+  const texts = sectionTitles[lang];
 
   return (
-    <section id="proyectos" className="carousel-section">
-      <h2 className="carousel-title">{sectionTitles[lang]}</h2>
-      <div className="carousel-container">
-        <div
-          className={`carousel-cards${animating ? " animating" : ""}`}
-        >
-          {currentProjects.map((project, idx) => (
-            <ProjectCard key={project.id || idx} project={project} />
-          ))}
-        </div>
+    <section id="proyectos" className="portfolio-section">
+      <div className="portfolio-header">
+        <span className="section-label">Portfolio</span>
+        <h2 className="section-title">{texts.title}</h2>
+        <p className="section-subtitle">{texts.subtitle}</p>
       </div>
-      <div className="carousel-pagination">
-        {Array.from({ length: totalPages }).map((_, idx) => (
-          <button
-            key={idx}
-            className={`carousel-dot${currentIndex === idx ? " active" : ""}`}
-            onClick={() => goToSlide(idx)}
-            aria-label={
-              lang === "es"
-                ? `Ir a página ${idx + 1}`
-                : `Go to page ${idx + 1}`
-            }
-          />
+
+      <div className="portfolio-grid">
+        {projects.map((project, index) => (
+          <a
+            key={project.id}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`portfolio-card ${index === 0 ? 'featured' : ''}`}
+            onMouseEnter={() => setHoveredId(project.id)}
+            onMouseLeave={() => setHoveredId(null)}
+            style={{ '--delay': `${index * 0.1}s` }}
+          >
+            <div className="card-image">
+              <img src={project.image} alt={project.title} />
+              <div className="card-overlay">
+                <span className="view-btn">
+                  {texts.viewProject}
+                  <ArrowUpRight size={18} />
+                </span>
+              </div>
+            </div>
+
+            <div className="card-content">
+              <div className="card-header">
+                <h3 className="card-title">{project.title}</h3>
+                <ExternalLink
+                  size={18}
+                  className={`card-icon ${hoveredId === project.id ? 'active' : ''}`}
+                />
+              </div>
+
+              <p className="card-description">{project.description}</p>
+
+              <div className="card-tags">
+                {project.technologies.slice(0, 4).map((tech, i) => (
+                  <span className="card-tag" key={i}>{tech}</span>
+                ))}
+                {project.technologies.length > 4 && (
+                  <span className="card-tag card-tag-more">
+                    +{project.technologies.length - 4}
+                  </span>
+                )}
+              </div>
+            </div>
+          </a>
         ))}
       </div>
     </section>

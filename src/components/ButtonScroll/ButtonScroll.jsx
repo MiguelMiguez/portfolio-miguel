@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import "./ButtonScroll.css";
 
 const sectionIds = ["inicio", "sobremi", "experiencia", "formacion", "proyectos", "tecnologias"];
@@ -75,12 +76,12 @@ export default function ButtonScroll() {
 
     return (
         <button
-            className={`hero-next-btn${isAtLastSection ? " rotated" : ""}`}
+            className="scroll-btn"
             onClick={handleScrollToNext}
             aria-label={isAtLastSection ? "Volver al inicio" : "Ir a la siguiente sección"}
             style={{ bottom: bottomOffset }}
         >
-            <span className="arrow">↓</span>
+            {isAtLastSection ? <ArrowUp size={24} /> : <ArrowDown size={24} />}
         </button>
     );
 }

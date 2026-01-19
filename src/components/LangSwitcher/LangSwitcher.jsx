@@ -1,19 +1,12 @@
 import React from "react";
+import { Globe } from "lucide-react";
 import "./LangSwitcher.css";
 
 export default function LangSwitcher({ lang, onChange }) {
     return (
-        <button className="navbar-lang-btn" onClick={onChange}>
-            {lang === "es" ? "Es" : "En"}
-            <img
-                src={
-                    lang === "es"
-                        ? "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
-                        : "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
-                }
-                alt={lang === "es" ? "Argentina" : "USA"}
-                className="navbar-lang-flag"
-            />
+        <button className="lang-switcher" onClick={onChange} aria-label="Change language">
+            <Globe size={16} />
+            <span className="lang-text">{lang.toUpperCase()}</span>
         </button>
     );
 }

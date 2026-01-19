@@ -1,0 +1,67 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-track {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: var(--surface-elevated);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  border: 1.5px solid var(--border-subtle);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-track:hover {
+  border-color: var(--accent);
+}
+
+.theme-icon {
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.sun-icon {
+  color: var(--text-secondary);
+}
+
+.moon-icon {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .sun-icon {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .moon-icon {
+  color: var(--accent);
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  left: 4px;
+}
+
+.theme-toggle-thumb.light {
+  left: 4px;
+}
+
+.theme-toggle-thumb.dark {
+  left: calc(100% - 24px);
+}
