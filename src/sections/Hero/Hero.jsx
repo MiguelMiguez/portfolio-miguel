@@ -2,7 +2,7 @@ import React from "react";
 import { Mail, Linkedin, Github, Download } from "lucide-react";
 import "./Hero.css";
 import profile from "../../assets/profile.png";
-import cvFile from "../../assets/CV Miguel Miguez.pdf";
+import cvFile from "../../assets/Miguel Miguez-CV.pdf";
 
 const heroTexts = {
     es: {

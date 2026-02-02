@@ -39,8 +39,9 @@ export default function Navbar({ lang, onLangChange }) {
     <nav className="navbar">
       <div className="navbar-desktop">
         <div className="navbar-logo">
-          <span className="navbar-logo-white">m</span>
-          <span className="navbar-logo-accent">m</span>
+          <span className="navbar-logo-white">M</span>
+          <span className="navbar-logo-white">M</span>
+          <span className="navbar-logo-accent">.</span>
         </div>
 
         <div className="navbar-links-pill">
