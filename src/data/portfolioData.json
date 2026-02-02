@@ -58,11 +58,11 @@
     },
     {
       "id": 6,
-      "title": "Sneaker Solid",
-      "description": "Tienda E-Commerce, desarrollada para el curso de JavaScript en CoderHouse.",
+      "title": "BaireSneakers",
+      "description": " E-Commerce desarrollado como modelo base con simulación de ventas, gestión de catálogo y carrito de compras.",
       "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
-      "url": "https://sneakersolid.netlify.app/"
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1770051723/Captura_de_pantalla_2026-02-02_140148_w2ev8n.png",
+      "url": "https://bairesneakers.netlify.app/"
     }
   ],
   "en": [
