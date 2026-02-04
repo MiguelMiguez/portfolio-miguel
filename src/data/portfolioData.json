@@ -2,20 +2,18 @@
   "es": [
     {
       "id": 1,
-      "title": "Booking-Bot",
-      "description": "Desarrollo de un bot de reservas para WhatsApp con integración de inteligencia artificial.",
+      "title": "BurgerFlow",
+      "description": "Desarrollo de un bot de recepción de pedidos para WhatsApp, junto con una plataforma web para la gestión de los mismos.",
       "technologies": [
         "React",
         "CSS",
         "TypeScript",
         "Firebase",
         "Node.js",
-        "OpenAI",
-        "DialogFlow",
         "APIs REST"
       ],
-      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
-      "url": "https://booking-bot-wpp.web.app/"
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1770242132/Captura_de_pantalla_2026-02-04_185436_hwfefj.png",
+      "url": "https://burgerflow.netlify.app/"
     },
     {
       "id": 2,
@@ -35,18 +33,20 @@
     },
     {
       "id": 4,
-      "title": "Andes Polygon",
-      "description": "Diseño de landing page para una Start-Up de desarrollo web, trabajando en colaboración para ofrecer soluciones innovadoras y de calidad.",
+      "title": "Booking-Bot",
+      "description": "Desarrollo de un bot de reservas para WhatsApp con integración de inteligencia artificial.",
       "technologies": [
-        "React.js",
-        "Tailwind CSS",
-        "PHP",
+        "React",
+        "CSS",
+        "TypeScript",
+        "Firebase",
         "Node.js",
-        "JSON",
-        "ViteJS"
+        "OpenAI",
+        "DialogFlow",
+        "APIs REST"
       ],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
-      "url": "https://andespolygon.netlify.app/"
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
+      "url": "https://booking-bot-wpp.web.app/"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@
       "id": 6,
       "title": "BaireSneakers",
       "description": " E-Commerce desarrollado como modelo base con simulación de ventas, gestión de catálogo y carrito de compras.",
-      "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
+      "technologies": ["React", "CSS", "TypeScript", "APIs REST", "Firebase"],
       "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1770051723/Captura_de_pantalla_2026-02-02_140148_w2ev8n.png",
       "url": "https://bairesneakers.netlify.app/"
     }
@@ -101,18 +101,20 @@
     },
     {
       "id": 4,
-      "title": "Andes Polygon",
-      "description": "Landing page design for a web development Start-Up, collaborating to deliver innovative and high-quality solutions.",
+      "title": "Booking-Bot",
+      "description": "Development of a booking bot for WhatsApp with artificial intelligence integration.",
       "technologies": [
-        "React.js",
-        "Tailwind CSS",
-        "PHP",
+        "React",
+        "CSS",
+        "TypeScript",
+        "Firebase",
         "Node.js",
-        "JSON",
-        "ViteJS"
+        "OpenAI",
+        "DialogFlow",
+        "APIs REST"
       ],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1749400519/AndesPolygon_ckl1og.jpg",
-      "url": "https://andespolygon.netlify.app/"
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1762190103/Captura_de_pantalla_2025-11-03_141358_ohiylm.png",
+      "url": "https://booking-bot-wpp.web.app/"
     },
     {
       "id": 5,
@@ -124,11 +126,11 @@
     },
     {
       "id": 6,
-      "title": "Sneaker Solid",
+      "title": "BaireSneakers",
       "description": "E-Commerce store, developed for the JavaScript course at CoderHouse.",
-      "technologies": ["HTML", "SASS", "JavaScript", "JSON", "Bootstrap"],
-      "image": "https://res.cloudinary.com/deamcrkgb/image/upload/v1745879360/Captura_de_pantalla_2025-03-21_153507_z124ib.png",
-      "url": "https://sneakersolid.netlify.app/"
+      "technologies": ["React", "CSS", "TypeScript", "APIs REST", "Firebase"],
+      "image": "https://res.cloudinary.com/dxl9cojcx/image/upload/v1770051723/Captura_de_pantalla_2026-02-02_140148_w2ev8n.png",
+      "url": "https://bairesneakers.netlify.app/"
     }
   ]
 }
