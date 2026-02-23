@@ -23,8 +23,8 @@ export default function Footer({ lang = "es" }) {
             <div className="footer-content">
                 <div className="footer-brand">
                     <div className="footer-logo">
-                        <span className="logo-primary">m</span>
-                        <span className="logo-accent">m</span>
+                        <span className="logo-primary">MM</span>
+                        <span className="logo-accent">.</span>
                     </div>
                     <p className="footer-tagline">{texts.tagline}</p>
                 </div>

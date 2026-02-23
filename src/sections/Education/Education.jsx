@@ -5,10 +5,12 @@ import "./Education.css";
 
 const sectionTitles = {
     es: {
+        label: "Aprendizaje",
         education: "Formación",
         certificates: "Certificaciones"
     },
     en: {
+        label: "Learning",
         education: "Education",
         certificates: "Certificates"
     }
@@ -21,7 +23,7 @@ export default function Education({ lang }) {
     return (
         <section className="education-section" id="formacion">
             <div className="education-header">
-                <span className="section-label">Aprendizaje</span>
+                <span className="section-label">{sectionTitles[lang].label}</span>
                 <h2 className="section-title">{sectionTitles[lang].education}</h2>
             </div>
 

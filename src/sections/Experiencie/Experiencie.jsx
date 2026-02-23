@@ -4,8 +4,14 @@ import experienciaData from "../../data/experiencia.json";
 import "./Experiencie.css";
 
 const sectionTitles = {
-  es: "Experiencia",
-  en: "Experience"
+  es: {
+    label: "Trayectoria",
+    title: "Experiencia"
+  },
+  en: {
+    label: "Journey",
+    title: "Experience"
+  }
 };
 
 export default function Experiencie({ lang }) {
@@ -15,8 +21,8 @@ export default function Experiencie({ lang }) {
   return (
     <section className="experience-section" id="experiencia">
       <div className="experience-header">
-        <span className="section-label">Trayectoria</span>
-        <h2 className="section-title">{sectionTitles[lang]}</h2>
+        <span className="section-label">{sectionTitles[lang].label}</span>
+        <h2 className="section-title">{sectionTitles[lang].title}</h2>
       </div>
 
       <div className="experience-container">
@@ -31,8 +37,8 @@ export default function Experiencie({ lang }) {
                 <Briefcase size={14} />
               </div>
               <div className="timeline-info">
-                <span className="timeline-year">{exp.startDate}</span>
                 <span className="timeline-company">{exp.name}</span>
+                <span className="timeline-year">{exp.startDate}</span>
               </div>
             </button>
           ))}

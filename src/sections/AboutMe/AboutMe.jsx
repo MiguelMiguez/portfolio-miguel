@@ -3,6 +3,11 @@ import "./AboutMe.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import aboutmeData from "../../data/aboutme.json";
 
+const sectionLabels = {
+    es: "Conóceme",
+    en: "Get to know me"
+};
+
 export default function AboutMe({ lang }) {
     const [width, setWidth] = React.useState(
         window.innerWidth >= 1280 ? 600 : 400
@@ -28,7 +33,7 @@ export default function AboutMe({ lang }) {
                     />
                 </div>
                 <div className="aboutme-content">
-                    <span className="section-label">Conóceme</span>
+                    <span className="section-label">{sectionLabels[lang]}</span>
                     <h2 className="aboutme-title">
                         {aboutmeData[lang].title1}
                         <span className="text-accent">{aboutmeData[lang].title2}</span>
