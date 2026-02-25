@@ -21,14 +21,11 @@
       "startDate": "2022",
       "endDate": "Actualidad",
       "summary": [
-        "Diseño y desarrollo de soluciones digitales end-to-end, especializándome en aplicaciones SaaS, automatización de procesos con IA y sitios corporativos de alto rendimiento.",
-        "Desarrollo de Producto SaaS (BurgerFlow): Lideré la arquitectura y desarrollo de una plataforma de gestión gastronómica integral.",
+        "Desarrollo de Producto SaaS (BurgerFlow): Diseño de la arquitectura y desarrollo de una plataforma de gestión gastronómica integral.",
         "Construí un panel administrativo con React, TypeScript y Vite, integrando Firebase para la sincronización de stock y pedidos en tiempo real.",
         "Implementé la automatización de pedidos vía WhatsApp Business Cloud API y la integración de pagos con Mercado Pago.",
         "Automatización y Chatbots (Booking-Bot / Hooligang Cuts): Creé sistemas de reservas automatizados utilizando OpenAI y DialogFlow para procesamiento de lenguaje natural.",
-        "Desarrollé APIs REST con Node.js y Express para gestionar la lógica de disponibilidad y la sincronización bidireccional con Cal.com.",
-        "Desarrollo Web Corporativo (Campo Fértil / Hooligang Cuts): Despliegue de sitios institucionales optimizados para SEO y performance utilizando React y SASS, logrando una experiencia de usuario fluida y adaptable.",
-        "Tecnologías utilizadas: React, TypeScript, Node.js, Firebase, OpenAI, WhatsApp API, Mercado Pago, Tailwind/SASS."
+        "Desarrollo Web Corporativo (Campo Fértil / Hooligang Cuts): Despliegue de sitios institucionales optimizados para SEO y performance utilizando React y SASS, logrando una experiencia de usuario fluida y adaptable."
       ]
     },
     {

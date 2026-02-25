@@ -60,7 +60,7 @@ export default function Experiencie({ lang }) {
             </div>
             <p className="experience-position">{experiencia[activeIdx].position}</p>
             <ul className="experience-summary">
-              {experiencia[activeIdx].summary?.slice(0, 4).map((item, i) => (
+              {experiencia[activeIdx].summary?.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>
