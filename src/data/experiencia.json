@@ -16,21 +16,19 @@
     },
     {
       "name": "Desarrollador Web Freelance",
-      "position": "Desarrollador Front-End",
+      "position": "Desarrollador Full Stack",
       "url": "",
       "startDate": "2022",
       "endDate": "Actualidad",
       "summary": [
-        "Diseño y desarrollo de soluciones web personalizadas para clientes de distintos sectores, priorizando la experiencia del usuario y la adaptabilidad a distintos dispositivos.",
-        "Proyecto BurgerFlow - SaaS de Gestión Gastronómica: Diseñé y desarrollé una plataforma SaaS end-to-end para la automatización de pedidos vía WhatsApp Business Cloud API.",
-        "Construí un panel administrativo con React, TypeScript y Vite, implementando Firebase (Firestore/Auth) para la sincronización de pedidos y stock en tiempo real.",
-        "Integré la pasarela de pagos de Mercado Pago y gestioné la sincronización bidireccional de catálogos complejos con Meta Commerce Manager.",
-        "Optimicé el rendimiento de la aplicación mediante la compresión de imágenes (Cloudinary/Squoosh) y manejo eficiente de estados globales, logrando una experiencia fluida en dispositivos móviles.",
-        "Sistema de Gestión de Turnos: Desarrollé un sistema completo de reservas automatizado mediante WhatsApp Business API, integrando un chatbot conversacional con lógica de disponibilidad en tiempo real.",
-        "Construí una API REST con Node.js y Express para la administración de servicios, horarios y clientes, implementando autenticación JWT y sincronización con Cal.com para gestión de calendarios.",
-        "Diseñé un panel de control responsivo para la visualización de métricas, historial de reservas y configuración de servicios, optimizando la experiencia del usuario en dispositivos móviles.",
-        "Creación de sitios web comerciales y landing pages, como Campo Fértil y Hooligang Cuts, con énfasis en rendimiento, SEO y diseño responsivo.",
-        "Tecnologías utilizadas: React.js, TypeScript, Node.js, Express, Tailwind CSS, SASS, Firebase, WhatsApp Cloud API, Mercado Pago, Meta Commerce Manager, Cal.com, JWT, Cloudinary, Vite."
+        "Diseño y desarrollo de soluciones digitales end-to-end, especializándome en aplicaciones SaaS, automatización de procesos con IA y sitios corporativos de alto rendimiento.",
+        "Desarrollo de Producto SaaS (BurgerFlow): Lideré la arquitectura y desarrollo de una plataforma de gestión gastronómica integral.",
+        "Construí un panel administrativo con React, TypeScript y Vite, integrando Firebase para la sincronización de stock y pedidos en tiempo real.",
+        "Implementé la automatización de pedidos vía WhatsApp Business Cloud API y la integración de pagos con Mercado Pago.",
+        "Automatización y Chatbots (Booking-Bot / Hooligang Cuts): Creé sistemas de reservas automatizados utilizando OpenAI y DialogFlow para procesamiento de lenguaje natural.",
+        "Desarrollé APIs REST con Node.js y Express para gestionar la lógica de disponibilidad y la sincronización bidireccional con Cal.com.",
+        "Desarrollo Web Corporativo (Campo Fértil / Hooligang Cuts): Despliegue de sitios institucionales optimizados para SEO y performance utilizando React y SASS, logrando una experiencia de usuario fluida y adaptable.",
+        "Tecnologías utilizadas: React, TypeScript, Node.js, Firebase, OpenAI, WhatsApp API, Mercado Pago, Tailwind/SASS."
       ]
     },
     {
@@ -63,21 +61,19 @@
     },
     {
       "name": "Freelance Web Developer",
-      "position": "Front-End Developer",
+      "position": "Full Stack Developer",
       "url": "",
       "startDate": "2022",
       "endDate": "Present",
       "summary": [
-        "Designed and developed custom web solutions for clients across different sectors, focusing on responsive design and user experience.",
-        "BurgerFlow Project - Restaurant Management SaaS: Designed and developed an end-to-end SaaS platform for automated ordering via WhatsApp Business Cloud API.",
-        "Built an admin dashboard with React, TypeScript, and Vite, implementing Firebase (Firestore/Auth) for real-time order and inventory synchronization.",
-        "Integrated Mercado Pago payment gateway and managed bidirectional synchronization of complex catalogs with Meta Commerce Manager.",
-        "Optimized application performance through image compression (Cloudinary/Squoosh) and efficient global state management, achieving smooth mobile experience.",
-        "Appointment Management System: Developed a complete automated booking system via WhatsApp Business API, integrating a conversational chatbot with real-time availability logic.",
-        "Built a REST API with Node.js and Express for service, schedule, and client management, implementing JWT authentication and Cal.com integration for calendar synchronization.",
-        "Designed a responsive control panel for metrics visualization, booking history, and service configuration, optimizing mobile user experience.",
-        "Created commercial websites and landing pages (Campo Fértil, Hooligang Cuts), optimizing performance, SEO, and accessibility.",
-        "Technologies used: React.js, TypeScript, Node.js, Express, Tailwind CSS, SASS, Firebase, WhatsApp Cloud API, Mercado Pago, Meta Commerce Manager, Cal.com, JWT, Cloudinary, Vite."
+        "Designed and developed end-to-end digital solutions, specializing in SaaS applications, AI process automation, and high-performance corporate sites.",
+        "SaaS Product Development (BurgerFlow): Led the architecture and development of a comprehensive gastronomic management platform.",
+        "Built an admin dashboard using React, TypeScript, and Vite, integrating Firebase for real-time stock and order synchronization.",
+        "Implemented automated ordering via WhatsApp Business Cloud API and payment integration with Mercado Pago.",
+        "Automation & Chatbots (Booking-Bot / Hooligang Cuts): Created automated booking systems using OpenAI and DialogFlow for natural language processing.",
+        "Developed REST APIs with Node.js and Express to manage availability logic and bidirectional synchronization with Cal.com.",
+        "Corporate Web Development (Campo Fértil / Hooligang Cuts): Deployed institutional websites optimized for SEO and performance using React and SASS, achieving a fluid and adaptable user experience.",
+        "Technologies used: React, TypeScript, Node.js, Firebase, OpenAI, WhatsApp API, Mercado Pago, Tailwind/SASS."
       ]
     },
     {
